@@ -14,9 +14,11 @@
             list-style: none;
         }
     </style>
-    <link rel="stylesheet" href="scss/_add_t_wrap.css">
-    <link rel="stylesheet" href="scss/_site_nav.css">
-    <link rel="stylesheet" href="scss/body.css">
+    <link rel="stylesheet" href="css/add_t_wrap.css">
+    <link rel="stylesheet" href="css/site_nav.css">
+    <link rel="stylesheet" href="css/body.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/main_nav_wrap.css">
 </head>
 
 <body>
@@ -27,13 +29,24 @@
     </div>
     <div class="site_nav">
         <div class="width">
-            <ul class="nav_l">
+            <ul class="nav_l" id="city-pick">
                 <li class="siteinfo">
                     <p>
                         <span>当前城市：</span>
-                        <a href="#">
+                        <a href="#" class="cityshow">
+                            <span class="text"></span>
                         </a>
                     </p>
+                    <!-- 三级联动 -->
+
+                    <!-- <div class="city">
+                        <p>
+                            您当前的城市为：<span></span>
+                        </p>
+                        <div class="hote-city"></div>
+                        <div class="choice"></div>
+                        <div class="city-list"></div>
+                    </div> -->
                 </li>
             </ul>
             <ul class="nav_l" id="top_login_span">
@@ -48,7 +61,7 @@
             <ul class="nav_r">
                 <li></li>
                 <li>
-                    <p><a href="#"><span>我的账户</span></a></p>
+                    <p><a href="#"><span>我的账户<i class="png"></i></span></a></p>
                 </li>
                 <li><a href="#">
                     购物车<b>0</b>件
@@ -65,6 +78,134 @@
                     <a href="https://www.womai.com/sale/2013/cncblika/"><span class="zhongxinexchange"></span></a>
                 </li>
             </ul>
+        </div>
+    </div>
+    <div class="header clearfix png">
+        <div class="width">
+            <div class="log">
+                <a href="#">
+                    <img src="https://pic3.womai.com/upload/backend/2020/08/13/15/1597302533423.png" alt="">
+                </a>
+            </div>
+            <div class="search_wrap">
+                <div class="search_l">
+                    <input type="text" value="国货当红 食在匠心" data-defvalue="国货当红 食在匠心">
+                    <div class="btn">
+                        <button type="submit">搜索</button>
+                    </div>
+                </div>
+                <div class="search_r">
+                    <a href="#">高级<br>搜索</a>
+                </div>
+                <div class="search_b">
+                    <span class="hotwords">
+                        <a href="#">国货当红 食</a>
+                        <a href="#">水</a>
+                        <a href="#">粮油</a>
+                        <a href="#">奶</a>
+                    </span>
+                </div>
+            </div>
+            <div class="app">
+                <a href="#">
+                    <img src="https://pic2.womai.com/upload/backend/2017/04/25/14/1493101441030.jpg" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="main_nav_wrap">
+        <div class="width">
+            <div class="all_kinds">
+                <h2 class="head">全部商品分类</h2>
+                <ul class="cont">
+                    <li class="kinds" id="goods-list">
+                        <h3 class="title">
+                            <b style="background-image:url(https://pic1.womai.com/upload/backend/2020/07/27/17/1595843031555.png)"></b>
+                            <a href="#">肉禽水产&nbsp;&nbsp;</a>
+                            <a href="#">水果蔬菜</a>
+                        </h3>
+                    </li>
+                    <li class="kinds" id="goods-list">
+                        <h3 class="title">
+                            <b style="background-image:url(https://pic1.womai.com/upload/backend/2020/07/27/17/1595843170305.png)"></b>
+                            <a href="#">进口食品&nbsp;&nbsp;</a>
+                            <a href="#">进口直采</a>
+                        </h3>
+                    </li>
+                    <li class="kinds" id="goods-list">
+                        <h3 class="title">
+                            <b style="background-image:url(https://pic3.womai.com/upload/backend/2020/07/27/17/1595843177762.png)"></b>
+                            <a href="#">酒&nbsp;&nbsp;</a>
+                            <a href="#">饮料/冲调&nbsp;&nbsp;</a>
+                            <a href="#">茶&nbsp;&nbsp;</a>
+                        </h3>
+                    </li>
+                    <li class="kinds" id="goods-list">
+                        <h3 class="title">
+                            <b style="background-image:url(https://pic1.womai.com/upload/backend/2020/07/27/17/1595843189670.png)"></b>
+                            <a href="#">休闲零食&nbsp;&nbsp;</a>
+                            <a href="#">地方特产</a>
+                        </h3>
+                    </li>
+                    <li class="kinds" id="goods-list">
+                        <h3 class="title">
+                            <b style="background-image:url(https://pic1.womai.com/upload/backend/2020/07/27/17/1595843243292.png)"></b>
+                            <a href="#">营养健康&nbsp;&nbsp;</a>
+                            <a href="#">奶制品</a>
+                        </h3>
+                    </li>
+                    <li class="kinds" id="goods-list">
+                        <h3 class="title">
+                            <b style="background-image:url(https://pic3.womai.com/upload/backend/2020/07/27/17/1595843253758.png)"></b>
+                            <a href="#">粮油副食&nbsp;&nbsp;</a>
+                            <a href="#">调味干货</a>
+                        </h3>
+                    </li>
+                    <li class="kinds" id="goods-list">
+                        <h3 class="title">
+                            <b style="background-image:url(https://pic3.womai.com/upload/backend/2020/07/27/17/1595843264555.png)"></b>
+                            <a href="#">母婴食品&nbsp;&nbsp;</a>
+                        </h3>
+                    </li>
+                    <li class="kinds" id="goods-list">
+                        <h3 class="title">
+                            <b style="background-image:url(https://pic3.womai.com/upload/backend/2020/07/27/17/1595843275397.png)"></b>
+                            <a href="#">礼卡礼券&nbsp;&nbsp;</a>
+                        </h3>
+                    </li>
+                    <li class="kinds" id="goods-list">
+                        <h3 class="title">
+                            <b style="background-image:url(https://pic3.womai.com/upload/backend/2020/07/27/17/1595843285981.png)"></b>
+                            <a href="#">中粮制造&nbsp;&nbsp;</a>
+                        </h3>
+                    </li>
+                    <li class="kinds" id="goods-list">
+                        <h3 class="title">
+                            <b style="background-image:url(https://pic3.womai.com/upload/backend/2020/07/27/17/1595843293436.png)"></b>
+                            <a href="#">我买品牌&nbsp;&nbsp;</a>
+                        </h3>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav_v">
+                <span class="nav"><a href="#">团购</a></span>
+            </div>
+            <div class="min_cart">
+                <div class="btn">
+                    <span class="cart-icon">
+                        <i>0</i>
+                    </span>
+                    <span class="text">
+                        <a href="#">购物车</a>
+                    </span>
+                    <span class="arrow"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="banner">
+        <div class="banner-con">
+            <!-- 轮播图 -->
         </div>
     </div>
 </body>

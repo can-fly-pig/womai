@@ -1,0 +1,84 @@
+@charset "utf-8";
+.header {
+    position: static;
+    z-index: 100;
+    top: -130px;
+    width: 100%;
+    font-family: "微软雅黑";
+    margin: 35px auto 30px;
+    .log {
+        float: left;
+        width: 220px;
+        height: 86px;
+    }
+    .search_wrap {
+        width: 625px;
+        margin: 12px 0 0 48px;
+        float: left;
+        .search_l {
+            float: left;
+            width: 584px;
+            height: 38px;
+            border: 2px solid #c30000;
+            input {
+                width: 450px;
+                *width: 447px;
+                _width: 447px;
+                height: 36px;
+                *height: 30px;
+                padding-left: 32px;
+                font: 14px/36px "微软雅黑";
+                color: #bbb;
+                border: none;
+            }
+            .btn {
+                width: 100px;
+                height: 38px;
+                float: right;
+                button {
+                    background-color: #C70019;
+                    width: 100px;
+                    height: 38px;
+                    _height: 44px;
+                    font: 18px "微软雅黑";
+                    color: #fff;
+                    background-color: #c30000;
+                    border: none;
+                    cursor: pointer;
+                }
+            }
+        }
+        .search_r {
+            margin-top: 2px;
+            float: right;
+            line-height: 16px;
+            color: #999;
+            font-size: 14px !important;
+            font-family: "微软雅黑";
+        }
+        .search_b {
+            height: 18px;
+            padding-top: 8px;
+            clear: both;
+            overflow: hidden;
+            a {
+                margin-right: 18px;
+                color: #757575;
+            }
+        }
+    }
+    .app {
+        float: right;
+        width: 160px;
+        height: 80px;
+    }
+}
+
+.clearfix:after {
+    content: '\0020';
+    display: block;
+    height: 0;
+    clear: both;
+    font-size: 0;
+    visibility: hidden;
+}
