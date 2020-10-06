@@ -1,0 +1,25 @@
+$position:relative;
+$display:block;
+$l:50%;
+$margin-left:-95px;
+$w:100%;
+$h:100%;
+$margin: 0 auto;
+$text-align:left;
+// .add_t_wrap {
+// content: 'add_wrap';
+// }
+.add_t_wrap a {
+    display: $display;
+    width: $w;
+    height: $h;
+    margin: $margin;
+    text-align: $text-align;
+}
+
+.add_t_wrap img {
+    display: $display;
+    position: $position;
+    left: $l;
+    margin-left: $margin-left;
+}

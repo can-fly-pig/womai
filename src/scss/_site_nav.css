@@ -1,0 +1,48 @@
+.site_nav {
+  height: 32px;
+  background-color: #f5f5f5;
+  z-index: 1000;
+  line-height: 32px; }
+  .site_nav .width {
+    width: 1210px;
+    margin: 0 auto; }
+    .site_nav .width #top_login_span li {
+      background-image: url(icon3.png) no-repeat; }
+    .site_nav .width .nav_l {
+      float: left;
+      zoom: 1; }
+      .site_nav .width .nav_l li {
+        float: left;
+        margin-right: 20px; }
+      .site_nav .width .nav_l .welcome {
+        margin-right: 10px; }
+      .site_nav .width .nav_l .siteinfo {
+        position: relative;
+        z-index: 100;
+        padding-left: 15px;
+        background: url(icon2.png) no-repeat -101px 0; }
+        .site_nav .width .nav_l .siteinfo a {
+          text-align: left; }
+    .site_nav .width .nav_r {
+      float: right;
+      zoom: 1; }
+      .site_nav .width .nav_r li {
+        float: left;
+        padding: 0 10px 0 11px; }
+      .site_nav .width .nav_r .backexchange {
+        overflow: hidden; }
+        .site_nav .width .nav_r .backexchange .icbcexchange {
+          background: url(icon1.png) no-repeat 0 0;
+          width: 43px;
+          height: 15px;
+          margin: 8px 0 0 12px;
+          float: left;
+          display: inline-block; }
+        .site_nav .width .nav_r .backexchange .zhongxinexchange {
+          background: url(icon1.png) no-repeat 0 -20px;
+          width: 43px;
+          height: 15px;
+          margin: 8px 0 0 12px;
+          float: left; }
+
+/*# sourceMappingURL=_site_nav.css.map */
