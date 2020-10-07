@@ -1,0 +1,165 @@
+@charset "utf-8";
+.floor_adv {
+    margin-top: -6px;
+    display: flex;
+    a {
+        width: 403px;
+        height: 110px;
+    }
+}
+
+.floor1 {
+    display: flex;
+    .floor1_l {
+        width: 242px;
+        display: flex;
+        flex-direction: column;
+        h3 {
+            color: #88A9E2;
+            display: flex;
+            height: 38px;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 38px;
+            i {
+                background: #88A9E2;
+                width: 5px;
+                height: 20px;
+                margin: 8px 15px 0 0;
+            }
+        }
+        .con {
+            position: relative;
+            background: #a1c0f6;
+            position: relative;
+            padding-top: 50px;
+            .png {
+                background-position: 0 0;
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: block;
+                width: 56px;
+                height: 20px;
+                padding: 10px 0 34px 8px;
+                line-height: 20px;
+                font-size: 18px;
+                color: #fff;
+                font-weight: bold;
+                background: url(sanjiao.png) no-repeat;
+                cursor: pointer;
+            }
+            ul {
+                width: 200px;
+                height: 110px;
+                padding-bottom: 9px;
+                margin-left: 21px;
+                background: url(line.png) no-repeat bottom center;
+                li {
+                    position: relative;
+                    float: left;
+                    width: 75px;
+                    height: 36px;
+                    padding-left: 25px;
+                    font-size: 14px;
+                    line-height: 36px;
+                    overflow: hidden;
+                    i {
+                        position: absolute;
+                        top: 7px;
+                        left: 0;
+                        display: block;
+                        width: 22px;
+                        height: 22px;
+                    }
+                    a {
+                        color: #5e7090;
+                    }
+                }
+            }
+            .img {
+                .aImg {
+                    left: -242px;
+                    display: none;
+                    height: 400px;
+                    width: 242px;
+                }
+            }
+        }
+    }
+}
+
+.floor1_r {
+    width: 968px;
+    .recomm {
+        display: flex;
+        height: 36px;
+        margin: 0 0 2px 30px;
+        font-size: 16px;
+        line-height: 36px;
+        color: #434343;
+        .cur {
+            border-bottom: 2px solid #a1c0f6;
+            color: #434343;
+        }
+        li {
+            height: 36px;
+            margin-right: 30px;
+            padding: 0 5px;
+            text-align: center;
+            overflow: hidden;
+        }
+    }
+    .show {
+        display: block;
+    }
+    .unshow {
+        display: none;
+    }
+    .con-tab {
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            border-top: 1px solid #a1c0f6;
+        }
+        li {
+            width: 241px;
+            height: 250px;
+            border-bottom: 1px solid #ededed;
+            border-right: 1px solid #ededed;
+            overflow: hidden;
+        }
+        dt {
+            position: relative;
+            width: 240px;
+            height: 190px;
+            text-align: center;
+            img {
+                width: 180px;
+                height: 180px;
+                margin: 0 auto;
+                margin-top: 6px;
+            }
+        }
+        .name {
+            height: 24px;
+            font-size: 14px;
+            line-height: 24px;
+            color: #383838;
+            width: 200px;
+            margin-left: 20px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+        .price {
+            width: 200px;
+            margin-left: 20px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            font-size: 20px;
+            line-height: 26px;
+            color: #dd0800;
+            line-height: 26px;
+        }
+    }
+}

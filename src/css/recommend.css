@@ -1,0 +1,40 @@
+@charset "UTF-8";
+#recommend {
+  margin-top: 35px;
+  font-family: "微软雅黑";
+  overflow: hidden; }
+#recommend h2 {
+  height: 46px;
+  font-weight: normal;
+  line-height: 46px;
+  overflow: hidden; }
+#recommend h2 .fl {
+  font-size: 20px;
+  color: #383838; }
+#recommend h2 .words {
+  margin-left: 20px; }
+#recommend h2 .words img {
+  width: 216px;
+  height: 18px; }
+#recommend .recommend_pic {
+  display: flex; }
+#recommend .recommend_pic .adv1 {
+  width: 240px;
+  height: 420px; }
+#recommend .recommend_pic .adv1 img {
+  width: 240px;
+  height: 420px; }
+#recommend .recommend_pic .adv2 {
+  display: flex;
+  flex-direction: column;
+  width: 485px;
+  height: 420px; }
+#recommend .recommend_pic .adv2 img {
+  display: block; }
+#recommend .recommend_pic .com_t {
+  display: flex;
+  width: 485px; }
+#recommend .recommend_pic .com_t .border_r {
+  border-right: 2px solid #ededed; }
+
+/*# sourceMappingURL=recommend.css.map */

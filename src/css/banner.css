@@ -1,0 +1,117 @@
+.banner {
+  overflow: hidden;
+  width: 800px;
+  height: 450px;
+  margin: 0 auto; }
+.banner .arrow {
+  position: absolute;
+  z-index: 5;
+  top: 200px;
+  left: 50%;
+  width: 798px;
+  height: 62px;
+  margin-left: -395px;
+  pointer-events: none; }
+.banner .arrow a {
+  display: block;
+  width: 28px;
+  height: 62px;
+  font: 400 22px/62px simsun;
+  color: #fff;
+  text-align: center;
+  background: url(arrow.png) no-repeat;
+  text-decoration: none;
+  pointer-events: auto; }
+.banner ul li {
+  position: absolute;
+  top: 0;
+  left: 3px;
+  float: left;
+  width: 100%;
+  height: 450px;
+  text-align: center;
+  position: 0; }
+.banner ul li a {
+  display: block;
+  text-align: center;
+  margin: 0 auto; }
+.banner ul li a img {
+  width: 800px;
+  height: 450px;
+  margin: 0 auto; }
+.banner ol {
+  position: absolute;
+  top: 410px;
+  left: 50%;
+  z-index: 2;
+  height: 21px;
+  text-align: center;
+  width: 186px;
+  margin-left: -93px; }
+.banner ol li {
+  float: left;
+  width: 21px;
+  height: 21px;
+  margin: 0 5px;
+  background: url(icon3.png) no-repeat 0 0;
+  border: 0; }
+
+.banner_r {
+  width: 200px;
+  height: 448px;
+  background: #fff;
+  position: absolute;
+  top: 0px;
+  right: 0;
+  border: 1px solid #ddd;
+  border-top: 1px solid #e8e8e8;
+  overflow: hidden; }
+.banner_r .title {
+  position: absolute;
+  width: 202px;
+  height: 29px;
+  line-height: 29px;
+  overflow: hidden;
+  width: 67px;
+  padding: 0;
+  color: #0D8700;
+  border-bottom: 2px solid #2d8800;
+  background-color: #fff;
+  text-align: center; }
+.banner_r .title a {
+  color: #0D8700; }
+.banner_r .cont_banner {
+  padding: 42px 16px 0px;
+  height: 75px; }
+.banner_r .cont_banner .dot {
+  display: inline-block;
+  width: 2px;
+  height: 2px;
+  margin: 11px 8px 8px 0;
+  background-color: #4d4d4d;
+  overflow: hidden;
+  vertical-align: bottom; }
+.banner_r .nine-list ul {
+  width: 203px;
+  border-top: 1px solid #ddd;
+  overflow: hidden; }
+.banner_r .nine-list ul li {
+  float: left;
+  width: 66px;
+  height: 60px;
+  border-bottom: 1px dotted #ddd;
+  border-right: 1px dotted #ddd;
+  overflow: hidden;
+  text-align: center; }
+.banner_r .nine-list ul li img {
+  width: 65px;
+  height: 100%; }
+.banner_r .add_r {
+  width: 200px;
+  height: 148px;
+  margin: 0; }
+.banner_r .add_r img {
+  width: 200px;
+  height: 148px; }
+
+/*# sourceMappingURL=banner.css.map */

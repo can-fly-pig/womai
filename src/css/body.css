@@ -1,21 +1,29 @@
 @charset "UTF-8";
 body {
   color: #606060;
-  font: 12px/150% Arial, Tahoma, "宋体";
-}
+  font: 12px/150% Arial, Tahoma, "宋体"; }
 body a {
   text-decoration: none;
-  color: #606060;
-}
+  color: #606060; }
+body h2, body h3 {
+  font: bold 14px '微软雅黑'; }
 body .width {
   width: 1210px;
-  margin: 0 auto;
-}
+  margin: 0 auto; }
 body img {
-  border: 0px;
-}
+  border: 0px; }
 body div {
-  display: block;
-}
+  display: block; }
+body .fl {
+  float: left; }
+body .fr {
+  float: right; }
+body .wrapper {
+  width: 1210px;
+  margin: 0 auto;
+  position: relative; }
+body .floor {
+  font-family: "微软雅黑";
+  margin-top: 14px; }
 
 /*# sourceMappingURL=body.css.map */

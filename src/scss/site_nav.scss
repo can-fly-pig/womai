@@ -70,7 +70,7 @@ $margin-r:20px;
             .backexchange {
                 overflow: $hidden;
                 .icbcexchange {
-                    background: $bacim;
+                    background: $bacim_z;
                     width: $wid;
                     height: $hei;
                     margin: $marg;
@@ -78,7 +78,7 @@ $margin-r:20px;
                     display: $inlineblock;
                 }
                 .zhongxinexchange {
-                    background: $bacim_z;
+                    background: $bacim;
                     width: $wid;
                     height: $hei;
                     margin: $marg;

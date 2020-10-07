@@ -3,17 +3,14 @@
   border-bottom: 2px solid #E8382F;
   position: relative;
   height: 46px;
-  z-index: 999;
-}
+  z-index: 999; }
 .main_nav_wrap .width {
-  position: relative;
-}
+  position: relative; }
 .main_nav_wrap .width .all_kinds {
   position: absolute;
   top: 2px;
   left: 0;
-  float: left;
-}
+  float: left; }
 .main_nav_wrap .width .all_kinds .head {
   background-color: #E8382F;
   width: 210px;
@@ -21,15 +18,13 @@
   line-height: 46px;
   color: #fff;
   font-size: 16px;
-  text-align: center;
-}
+  text-align: center; }
 .main_nav_wrap .width .all_kinds .cont {
   background-color: #C70019;
   position: relative;
   width: 210px;
   height: 410px;
-  padding: 12px 0 28px 0;
-}
+  padding: 12px 0 28px 0; }
 .main_nav_wrap .width .nav_v .nav {
   width: 760px;
   height: 46px;
@@ -37,8 +32,7 @@
   float: left;
   position: relative;
   float: left;
-  white-space: nowrap;
-}
+  white-space: nowrap; }
 .main_nav_wrap .width .nav_v .nav a {
   display: inline-block;
   height: 38px;
@@ -46,14 +40,12 @@
   padding: 0 11px;
   font: 16px/38px "Microsoft YaHei";
   text-align: center;
-  color: #383838;
-}
+  color: #383838; }
 .main_nav_wrap .width .min_cart {
   float: right;
   position: relative;
   right: 0;
-  z-index: 100;
-}
+  z-index: 100; }
 .main_nav_wrap .width .min_cart .btn {
   display: inline;
   position: absolute;
@@ -66,8 +58,7 @@
   line-height: 22px;
   text-align: center;
   color: #098A00;
-  cursor: pointer;
-}
+  cursor: pointer; }
 .main_nav_wrap .width .min_cart .btn .cart-icon {
   display: inline-block;
   width: 27px;
@@ -77,11 +68,10 @@
   line-height: 22px;
   text-align: center;
   color: #098A00;
-  cursor: pointer;
-}
+  cursor: pointer; }
 .main_nav_wrap .width .min_cart .btn .cart-icon i {
   position: absolute;
-  left: 50px;
+  left: 65px;
   top: -8px;
   width: 25px;
   height: 20px;
@@ -91,8 +81,7 @@
   font-style: normal;
   color: #fff;
   overflow: hidden;
-  display: block;
-}
+  display: block; }
 .main_nav_wrap .width .min_cart .btn .text {
   display: inline-block;
   height: 20px;
@@ -101,41 +90,35 @@
   margin-left: 15px;
   font-family: "微软雅黑";
   font-size: 14px;
-  color: #383838;
-}
+  color: #383838; }
 .main_nav_wrap .width .min_cart .btn .arrow {
   float: right;
   width: 10px;
   height: 6px;
   margin: 10px 18px 0 5px;
   background: url(icon2.png) no-repeat 0 -40px;
-  overflow: hidden;
-}
+  overflow: hidden; }
 
 #goods-list {
   float: left;
   height: 39px;
-  width: 100%;
-}
+  width: 100%; }
 #goods-list h3 {
   width: 172px;
   height: 32px;
   padding: 0 19px 0 19px;
   line-height: 32px;
   font-size: 14px;
-  overflow: hidden;
-}
+  overflow: hidden; }
 #goods-list h3 b {
   display: block;
   float: left;
   width: 18px;
   height: 18px;
   margin: 6px 16px 0 0;
-  background-position: 0 0;
-}
+  background-position: 0 0; }
 #goods-list h3 a {
   color: #fff;
-  font-weight: normal;
-}
+  font-weight: normal; }
 
 /*# sourceMappingURL=main_nav_wrap.css.map */
