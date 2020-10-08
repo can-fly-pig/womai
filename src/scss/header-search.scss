@@ -1,23 +1,23 @@
 @charset "utf-8";
-.header {
-    position: static;
-    z-index: 100;
-    top: -130px;
-    width: 100%;
-    font-family: "微软雅黑";
-    margin: 35px auto 30px;
-    .log {
-        float: left;
-        width: 220px;
-        height: 86px;
+.header-search {
+    position: fixed;
+    height: 80px;
+    margin: 0 auto;
+    padding-bottom: 12px;
+    background: url(searchline.png) repeat-x bottom;
+    .width {
+        display: flex;
+        justify-content: space-between;
     }
-    .search_wrap {
+    .log {
+        width: 220px;
+    }
+    .search {
+        position: relative;
         width: 625px;
         margin: 12px 0 0 48px;
-        float: left;
+        display: flex;
         .search_l {
-            position: relative;
-            float: left;
             width: 584px;
             height: 38px;
             border: 2px solid #c30000;
@@ -54,38 +54,13 @@
                 }
             }
         }
-        .search_r {
-            margin-top: 2px;
-            float: right;
-            line-height: 16px;
-            color: #999;
-            font-size: 14px !important;
-            font-family: "微软雅黑";
-        }
     }
-    .app {
-        float: right;
-        width: 160px;
-        height: 80px;
+    .number {
+        margin-top: 12px;
+        width: 174px;
+        line-height: 23px;
+        font-size: 16px;
+        color: #c30000;
+        font-weight: bold;
     }
-}
-
-.search_b {
-    height: 18px;
-    padding-top: 8px;
-    clear: both;
-    overflow: hidden;
-    a {
-        margin-right: 18px;
-        color: #757575;
-    }
-}
-
-.clearfix:after {
-    content: '\0020';
-    display: block;
-    height: 0;
-    clear: both;
-    font-size: 0;
-    visibility: hidden;
 }

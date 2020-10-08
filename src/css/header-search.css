@@ -1,0 +1,68 @@
+@charset "UTF-8";
+.header-search {
+  position: fixed;
+  height: 80px;
+  margin: 0 auto;
+  padding-bottom: 12px;
+  background: url(searchline.png) repeat-x bottom;
+}
+.header-search .width {
+  display: flex;
+  justify-content: space-between;
+}
+.header-search .log {
+  width: 220px;
+}
+.header-search .search {
+  position: relative;
+  width: 625px;
+  margin: 12px 0 0 48px;
+  display: flex;
+}
+.header-search .search .search_l {
+  width: 584px;
+  height: 38px;
+  border: 2px solid #c30000;
+}
+.header-search .search .search_l em {
+  position: absolute;
+  top: 11px;
+  left: 10px;
+  width: 16px;
+  height: 16px;
+  background: url(icon2.png) no-repeat -69px -24px;
+}
+.header-search .search .search_l input {
+  width: 450px;
+  height: 36px;
+  padding-left: 32px;
+  font: 14px/36px "微软雅黑";
+  color: #bbb;
+  border: none;
+}
+.header-search .search .search_l .btn {
+  width: 100px;
+  height: 38px;
+  float: right;
+}
+.header-search .search .search_l .btn button {
+  background-color: #C70019;
+  width: 100px;
+  height: 38px;
+  _height: 44px;
+  font: 18px "微软雅黑";
+  color: #fff;
+  background-color: #c30000;
+  border: none;
+  cursor: pointer;
+}
+.header-search .number {
+  margin-top: 12px;
+  width: 174px;
+  line-height: 23px;
+  font-size: 16px;
+  color: #c30000;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=header-search.css.map */

@@ -18,17 +18,23 @@
   float: left;
 }
 .header .search_wrap .search_l {
+  position: relative;
   float: left;
   width: 584px;
   height: 38px;
   border: 2px solid #c30000;
 }
+.header .search_wrap .search_l em {
+  position: absolute;
+  top: 11px;
+  left: 10px;
+  width: 16px;
+  height: 16px;
+  background: url(icon2.png) no-repeat -69px -24px;
+}
 .header .search_wrap .search_l input {
   width: 450px;
-  *width: 447px;
-  _width: 447px;
   height: 36px;
-  *height: 30px;
   padding-left: 32px;
   font: 14px/36px "微软雅黑";
   color: #bbb;
@@ -58,20 +64,21 @@
   font-size: 14px !important;
   font-family: "微软雅黑";
 }
-.header .search_wrap .search_b {
+.header .app {
+  float: right;
+  width: 160px;
+  height: 80px;
+}
+
+.search_b {
   height: 18px;
   padding-top: 8px;
   clear: both;
   overflow: hidden;
 }
-.header .search_wrap .search_b a {
+.search_b a {
   margin-right: 18px;
   color: #757575;
-}
-.header .app {
-  float: right;
-  width: 160px;
-  height: 80px;
 }
 
 .clearfix:after {

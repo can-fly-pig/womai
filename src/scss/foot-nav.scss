@@ -1,0 +1,53 @@
+body .foot_nav {
+    margin-top: 45px;
+    border-top: 2px solid #3ea600;
+    .nav-con {
+        border-left: 1px solid #ededed;
+        display: flex;
+        flex-wrap: wrap;
+        .section {
+            width: 240px;
+            height: 364px;
+            border-right: 1px solid #ededed;
+            border-bottom: 1px solid #ededed;
+            ul {
+                height: 125px;
+                margin-top: 25px;
+                padding-left: 34px;
+                overflow: hidden;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                li {
+                    width: 95px;
+                    margin-right: 8px;
+                    height: 26px;
+                    line-height: 26px;
+                    overflow: hidden;
+                }
+            }
+        }
+    }
+    #none {
+        width: 244px;
+    }
+    h3 {
+        height: 82px;
+        font-weight: bold;
+        padding: 0 18px;
+        font-size: 16px;
+        line-height: 82px;
+        text-align: center;
+        cursor: pointer;
+        overflow: hidden;
+    }
+    .pic {
+        text-align: center;
+        img {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto;
+            display: block;
+        }
+    }
+}

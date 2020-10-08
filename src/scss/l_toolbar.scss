@@ -1,0 +1,97 @@
+.l_toolbar {
+    position: fixed;
+    top: 0;
+    z-index: 9999999;
+    right: -276px;
+    width: 310px;
+    color: #fff;
+    .toolbar-left {
+        height: 663px;
+        width: 34px;
+        background: #000;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .toolbar-top {
+            padding-top: 161.5px;
+            width: 34px;
+            height: 216px;
+            font: 12px/1.2 "Microsoft YaHei";
+            display: flex;
+            flex-direction: column;
+            .toolbar-car {
+                width: 18px;
+                height: 88px;
+                padding: 10px 8px;
+                text-align: center;
+                overflow: hidden;
+                cursor: pointer;
+                em {
+                    display: inline-block;
+                    width: 18px;
+                    height: 18px;
+                    background: url(leftbar.jpg) no-repeat;
+                    background-position: -178px -8px;
+                }
+                span {
+                    display: inline-block;
+                    height: 16px;
+                    margin: 8px auto 0;
+                    padding: 0 3px;
+                    line-height: 16px;
+                    border-radius: 3px;
+                    background: #3da700;
+                    color: #fff;
+                }
+            }
+        }
+        .toolbar-footer {
+            ul {
+                display: flex;
+                flex-direction: column;
+                li {
+                    position: relative;
+                    height: 34px;
+                    width: 34px;
+                    margin-top: 6px;
+                    line-height: 34px;
+                    cursor: pointer;
+                    span {
+                        position: absolute;
+                        right: 34px;
+                        height: 34px;
+                        width: 58px;
+                        padding-left: 12px;
+                        line-height: 34px;
+                        background: #3da700;
+                        display: none;
+                        overflow: hidden;
+                    }
+                    em {
+                        display: inline-block;
+                        background: url(leftbar.jpg) no-repeat;
+                        height: 34px;
+                        width: 34px;
+                        cursor: pointer;
+                        overflow: hidden;
+                    }
+                    .star {
+                        background-position: 0 0;
+                    }
+                    .price {
+                        background-position: -34px 0;
+                    }
+                    .in {
+                        background-position: -68px 0;
+                    }
+                    .erv {
+                        background-position: -102px 0;
+                    }
+                    .top {
+                        background-position: -136px 0;
+                    }
+                }
+            }
+        }
+    }
+}

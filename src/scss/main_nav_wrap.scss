@@ -119,6 +119,15 @@
     float: left;
     height: 39px;
     width: 100%;
+    &:hover {
+        background-color: white;
+    }
+    &:hover a {
+        color: #C70019;
+    }
+    &:hover b {
+        background-position: -19px 0;
+    }
     h3 {
         width: 172px;
         height: 32px;

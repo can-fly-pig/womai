@@ -1,0 +1,143 @@
+.foot {
+  margin-top: 45px;
+  padding-top: 45px;
+  border-top: 2px solid #e7e7e7;
+  background: #f7f7f7;
+  display: flex;
+  flex-direction: column;
+}
+.foot .healper {
+  display: flex;
+}
+.foot .healper .mode-list {
+  display: flex;
+  margin-left: 70px;
+  overflow: hidden;
+}
+.foot .healper .mode-list li {
+  width: 144px;
+  margin-right: 70px;
+}
+.foot .healper .mode-list li h3 {
+  height: 26px;
+  margin-bottom: 5px;
+  line-height: 26px;
+  font-size: 16px;
+  color: #6f6f6f;
+}
+.foot .healper .mode-list li ul {
+  height: 130px;
+}
+.foot .healper .mode-list li ul li {
+  height: 24px;
+  line-height: 24px;
+  color: #9c9c9c;
+  overflow: hidden;
+}
+.foot .healper .ervma {
+  display: flex;
+}
+.foot .healper .ervma dl {
+  margin-right: 45px;
+  width: 86px;
+  height: 122px;
+  display: flex;
+  flex-direction: column;
+}
+.foot .healper .ervma dl dt {
+  width: 130px;
+  height: 18px;
+  margin-bottom: 18px;
+  font-size: 16px;
+  color: #c60001;
+  text-align: center;
+  overflow: hidden;
+}
+.foot .healper .ervma dl dd {
+  width: 86px;
+  height: 86px;
+  padding-left: 22px;
+}
+.foot .about {
+  padding-top: 25px;
+  margin-top: 45px;
+  border-top: 2px solid #3ea600;
+  background: #fff;
+}
+.foot .about .link {
+  height: 22px;
+  line-height: 22px;
+  color: #989898;
+  overflow: hidden;
+  text-align: center;
+}
+.foot .about .link a {
+  font-size: 14px;
+  color: #606060;
+}
+.foot .about .link .line {
+  padding: 17px;
+}
+.foot .about .link .tuanmobile {
+  padding: 0px;
+  color: #c30000;
+  font-size: 14px;
+}
+.foot .about .footer {
+  width: 790px;
+  margin: 28px auto 0;
+  display: flex;
+}
+.foot .about .footer img {
+  width: 200px;
+  height: 50px;
+  margin-right: 20px;
+}
+.foot .about .footer .copyright span {
+  height: 22px;
+  line-height: 22px;
+  color: #989898;
+  overflow: hidden;
+}
+.foot .about .footer .copyright .beijing {
+  height: 22px;
+  line-height: 22px;
+  color: #989898;
+  overflow: hidden;
+  display: flex;
+}
+.foot .about .footer .copyright .beijing a {
+  display: flex;
+}
+.foot .about .footer .copyright .beijing i {
+  width: 20px;
+  height: 20px;
+  background: url(police.png) -114px 0px no-repeat;
+}
+.foot .about .footer .copyright .beijing p {
+  margin: 0px 0px 0px 5px;
+  color: #989898;
+}
+.foot .about .footer .copyright .permit {
+  height: 22px;
+  line-height: 22px;
+  color: #989898;
+  overflow: hidden;
+}
+.foot .about .integrity {
+  margin: 0 auto;
+  text-align: center;
+  height: 41px;
+}
+.foot .about .integrity a {
+  display: flex;
+  justify-content: center;
+}
+.foot .about .integrity i {
+  width: 112px;
+  height: 41px;
+  background: url(police.png) 0px 0px no-repeat;
+  display: block;
+}
+
+/*# sourceMappingURL=foot.css.map */

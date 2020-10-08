@@ -7,21 +7,19 @@
     <meta name="keywords" content="中粮我买网,网上购物,购物网,中粮我买网杭州站,杭州食品网" />
     <meta name="description" content="中粮我买网杭州站,世界500强中粮集团旗下食品网上购物网站。全部商品品质保证，严格把关保质期，支持货到付款，中粮我买网是网购用户首选的B2C网上购物商城。" />
     <meta property="qc:admins" content="21210535636775116375" />
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            list-style: none;
-        }
-    </style>
+    <link rel="shortcut icon" href="css/tubiao.jpg">
     <link rel="stylesheet" href="css/add_t_wrap.css">
     <link rel="stylesheet" href="css/site_nav.css">
-    <link rel="stylesheet" href="css/body.css">
+    <link rel="stylesheet" href="css/public.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/main_nav_wrap.css">
     <link rel="stylesheet" href="css/banner.css">
     <link rel="stylesheet" href="css/recommend.css">
     <link rel="stylesheet" href="css/floorbox.css">
+    <link rel="stylesheet" href="css/foot-nav.css">
+    <link rel="stylesheet" href="css/foot.css">
+    <link rel="stylesheet" href="css/l_toolbar.css">
+    <link rel="stylesheet" href="css/header-search.css">
 </head>
 
 <body>
@@ -36,7 +34,7 @@
                 <ul class="nav_l" id="city-pick">
                     <li class="siteinfo">
                         <p>
-                            <span>当前城市：</span>
+                            <span class="city">当前城市：</span>
                             <a href="#" class="cityshow">
                                 <span class="text"></span>
                             </a>
@@ -55,158 +53,186 @@
                 </ul>
                 <ul class="nav_l" id="top_login_span">
                     <li class="welcome">hi，欢迎来我买网!</li>
-                    <li class="t_item">
+                    <li class="t_item red">
                         <a href="#">登录</a>
                     </li>
-                    <li class="t_item">
+                    <li class="t_item red">
                         <a href="#">注册</a>
                     </li>
                 </ul>
                 <ul class="nav_r">
-                    <li></li>
-                    <li>
-                        <p><a href="#"><span>我的账户<i class="png"></i></span></a></p>
+                    <li class="pointer count">
+                        <p><span>我的账户<i class="png"></i><div class="my-count">
+                            <p><span>您还没有登录！</span>
+                            <a href="registry.html">登录</a>
+                        </p>
+                        <ul>
+                            <li><a href="#">待付款订单</a></li>
+                            <li><a href="#">我的消息</a></li>
+                            <li><a href="#">待签收订单</a></li>
+                            <li><a href="#">我的订单</a></li>
+                            <li><a href="#">支付卡账户</a></li>
+                            <li><a href="#">我的积分</a></li>
+                            <li><a href="#">优惠券/团购卡</a></li>
+                            <li><a href="#">我的收藏</a></li>
+                            <li><a href="#">电子礼品卡</a></li>
+                        </ul>
+            </div>
+            </span>
+
+            </p>
+            </li>
+            <li class="pointer red">
+                <a href="#">
+                    <em class="car"></em> 购物车
+                    <b>0</b>件
+                </a>
+            </li>
+            <li class="line">|</li>
+            <li class="pointer client">
+                <p><a href="#"><span>客户服务<i class="png"></i><div class="server">
+                    <ul>
+                        <li>帮助中心</li>
+                        <li>新手上路</li>
+                    </ul>
+                </div></span></a>
+                </p>
+
+            </li>
+            <li class="line">|</li>
+            <li class="pointer red"><a href="#">企业购</a></li>
+            <li class="line">|</li>
+            <li class="backexchange">
+                <a href="https://www.womai.com/sale/2012/icbclika/"><span class="icbcexchange pointer"></span></a>
+                <a href="https://www.womai.com/sale/2013/cncblika/"><span class="zhongxinexchange pointer"></span></a>
+            </li>
+            </ul>
+        </div>
+    </div>
+    <div class="header clearfix png">
+        <div class="width">
+            <div class="log">
+                <a href="#">
+                    <img src="https://pic3.womai.com/upload/backend/2020/08/13/15/1597302533423.png" alt="">
+                </a>
+            </div>
+            <div class="search_wrap">
+                <div class="search_l">
+                    <em></em>
+                    <input type="text" value="国货当红 食在匠心" data-defvalue="国货当红 食在匠心">
+                    <div class="btn">
+                        <button type="submit">搜索</button>
+                    </div>
+                </div>
+                <div class="search_r red">
+                    <a href="#">高级<br>搜索</a>
+                </div>
+                <div class="search_b">
+                    <span class="hotwords">
+                            <span class="red"><a href="#">国货当红 食</a></span>
+                    <span class="red"><a href="#">水</a></span>
+                    <span class="red"><a href="#">粮油</a></span>
+                    <span class="red"><a href="#">奶</a></span>
+                    </span>
+                </div>
+            </div>
+            <div class="app">
+                <a href="#">
+                    <img src="https://pic2.womai.com/upload/backend/2017/04/25/14/1493101441030.jpg" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="main_nav_wrap">
+        <div class="width">
+            <div class="all_kinds">
+                <h2 class="head">全部商品分类</h2>
+                <ul class="cont">
+                    <li class="kinds" id="goods-list">
+                        <h3 class="title">
+                            <b style="background-image:url(https://pic1.womai.com/upload/backend/2020/07/27/17/1595843031555.png)"></b>
+                            <span class="underline"><a href="#">肉禽水产&nbsp;&nbsp;</a></span>
+                            <span class="underline"><a href="#">水果蔬菜</a></span>
+                        </h3>
                     </li>
-                    <li><a href="#">
-                        购物车<b>0</b>件
-                    </a></li>
-                    <li>|</li>
-                    <li>
-                        <p><a href="#"><span>客户服务</span></a></p>
+                    <li class="kinds" id="goods-list">
+                        <h3 class="title">
+                            <b style="background-image:url(https://pic1.womai.com/upload/backend/2020/07/27/17/1595843170305.png)"></b>
+                            <span class="underline"><a href="#">进口食品&nbsp;&nbsp;</a></span>
+                            <span class="underline"><a href="#">进口直采</a></span>
+                        </h3>
                     </li>
-                    <li>|</li>
-                    <li><a href="#">企业购</a></li>
-                    <li>|</li>
-                    <li class="backexchange">
-                        <a href="https://www.womai.com/sale/2012/icbclika/"><span class="icbcexchange"></span></a>
-                        <a href="https://www.womai.com/sale/2013/cncblika/"><span class="zhongxinexchange"></span></a>
+                    <li class="kinds" id="goods-list">
+                        <h3 class="title">
+                            <b style="background-image:url(https://pic3.womai.com/upload/backend/2020/07/27/17/1595843177762.png)"></b>
+                            <span class="underline"><a href="#">酒&nbsp;&nbsp;</a></span>
+                            <span class="underline"><a href="#">饮料/冲调&nbsp;&nbsp;</a></span>
+                            <span class="underline"><a href="#">茶&nbsp;&nbsp;</a></span>
+                        </h3>
+                    </li>
+                    <li class="kinds" id="goods-list">
+                        <h3 class="title">
+                            <b style="background-image:url(https://pic1.womai.com/upload/backend/2020/07/27/17/1595843189670.png)"></b>
+                            <span class="underline"><a href="#">休闲零食&nbsp;&nbsp;</a></span>
+                            <span class="underline"><a href="#">地方特产</a></span>
+                        </h3>
+                    </li>
+                    <li class="kinds" id="goods-list">
+                        <h3 class="title">
+                            <b style="background-image:url(https://pic1.womai.com/upload/backend/2020/07/27/17/1595843243292.png)"></b>
+                            <span class="underline"><a href="#">营养健康&nbsp;&nbsp;</a></span>
+                            <span class="underline"><a href="#">奶制品</a></span>
+                        </h3>
+                    </li>
+                    <li class="kinds" id="goods-list">
+                        <h3 class="title">
+                            <b style="background-image:url(https://pic3.womai.com/upload/backend/2020/07/27/17/1595843253758.png)"></b>
+                            <span class="underline"><a href="#">粮油副食&nbsp;&nbsp;</a></span>
+                            <span class="underline"><a href="#">调味干货</a></span>
+                        </h3>
+                    </li>
+                    <li class="kinds" id="goods-list">
+                        <h3 class="title">
+                            <b style="background-image:url(https://pic3.womai.com/upload/backend/2020/07/27/17/1595843264555.png)"></b>
+                            <span class="underline"><a href="#">母婴食品&nbsp;&nbsp;</a></span>
+                        </h3>
+                    </li>
+                    <li class="kinds" id="goods-list">
+                        <h3 class="title">
+                            <b style="background-image:url(https://pic3.womai.com/upload/backend/2020/07/27/17/1595843275397.png)"></b>
+                            <span class="underline"><a href="#">礼卡礼券&nbsp;&nbsp;</a></span>
+                        </h3>
+                    </li>
+                    <li class="kinds" id="goods-list">
+                        <h3 class="title">
+                            <b style="background-image:url(https://pic3.womai.com/upload/backend/2020/07/27/17/1595843285981.png)"></b>
+                            <span class="underline"><a href="#">中粮制造&nbsp;&nbsp;</a></span>
+                        </h3>
+                    </li>
+                    <li class="kinds" id="goods-list">
+                        <h3 class="title">
+                            <b style="background-image:url(https://pic3.womai.com/upload/backend/2020/07/27/17/1595843293436.png)"></b>
+                            <span class="underline"><a href="#">我买品牌&nbsp;&nbsp;</a></span>
+                        </h3>
                     </li>
                 </ul>
             </div>
-        </div>
-        <div class="header clearfix png">
-            <div class="width">
-                <div class="log">
-                    <a href="#">
-                        <img src="https://pic3.womai.com/upload/backend/2020/08/13/15/1597302533423.png" alt="">
-                    </a>
-                </div>
-                <div class="search_wrap">
-                    <div class="search_l">
-                        <input type="text" value="国货当红 食在匠心" data-defvalue="国货当红 食在匠心">
-                        <div class="btn">
-                            <button type="submit">搜索</button>
-                        </div>
-                    </div>
-                    <div class="search_r">
-                        <a href="#">高级<br>搜索</a>
-                    </div>
-                    <div class="search_b">
-                        <span class="hotwords">
-                            <a href="#">国货当红 食</a>
-                            <a href="#">水</a>
-                            <a href="#">粮油</a>
-                            <a href="#">奶</a>
-                        </span>
-                    </div>
-                </div>
-                <div class="app">
-                    <a href="#">
-                        <img src="https://pic2.womai.com/upload/backend/2017/04/25/14/1493101441030.jpg" alt="">
-                    </a>
-                </div>
+            <div class="nav_v">
+                <span class="nav"><a href="#">团购</a></span>
             </div>
-        </div>
-        <div class="main_nav_wrap">
-            <div class="width">
-                <div class="all_kinds">
-                    <h2 class="head">全部商品分类</h2>
-                    <ul class="cont">
-                        <li class="kinds" id="goods-list">
-                            <h3 class="title">
-                                <b style="background-image:url(https://pic1.womai.com/upload/backend/2020/07/27/17/1595843031555.png)"></b>
-                                <a href="#">肉禽水产&nbsp;&nbsp;</a>
-                                <a href="#">水果蔬菜</a>
-                            </h3>
-                        </li>
-                        <li class="kinds" id="goods-list">
-                            <h3 class="title">
-                                <b style="background-image:url(https://pic1.womai.com/upload/backend/2020/07/27/17/1595843170305.png)"></b>
-                                <a href="#">进口食品&nbsp;&nbsp;</a>
-                                <a href="#">进口直采</a>
-                            </h3>
-                        </li>
-                        <li class="kinds" id="goods-list">
-                            <h3 class="title">
-                                <b style="background-image:url(https://pic3.womai.com/upload/backend/2020/07/27/17/1595843177762.png)"></b>
-                                <a href="#">酒&nbsp;&nbsp;</a>
-                                <a href="#">饮料/冲调&nbsp;&nbsp;</a>
-                                <a href="#">茶&nbsp;&nbsp;</a>
-                            </h3>
-                        </li>
-                        <li class="kinds" id="goods-list">
-                            <h3 class="title">
-                                <b style="background-image:url(https://pic1.womai.com/upload/backend/2020/07/27/17/1595843189670.png)"></b>
-                                <a href="#">休闲零食&nbsp;&nbsp;</a>
-                                <a href="#">地方特产</a>
-                            </h3>
-                        </li>
-                        <li class="kinds" id="goods-list">
-                            <h3 class="title">
-                                <b style="background-image:url(https://pic1.womai.com/upload/backend/2020/07/27/17/1595843243292.png)"></b>
-                                <a href="#">营养健康&nbsp;&nbsp;</a>
-                                <a href="#">奶制品</a>
-                            </h3>
-                        </li>
-                        <li class="kinds" id="goods-list">
-                            <h3 class="title">
-                                <b style="background-image:url(https://pic3.womai.com/upload/backend/2020/07/27/17/1595843253758.png)"></b>
-                                <a href="#">粮油副食&nbsp;&nbsp;</a>
-                                <a href="#">调味干货</a>
-                            </h3>
-                        </li>
-                        <li class="kinds" id="goods-list">
-                            <h3 class="title">
-                                <b style="background-image:url(https://pic3.womai.com/upload/backend/2020/07/27/17/1595843264555.png)"></b>
-                                <a href="#">母婴食品&nbsp;&nbsp;</a>
-                            </h3>
-                        </li>
-                        <li class="kinds" id="goods-list">
-                            <h3 class="title">
-                                <b style="background-image:url(https://pic3.womai.com/upload/backend/2020/07/27/17/1595843275397.png)"></b>
-                                <a href="#">礼卡礼券&nbsp;&nbsp;</a>
-                            </h3>
-                        </li>
-                        <li class="kinds" id="goods-list">
-                            <h3 class="title">
-                                <b style="background-image:url(https://pic3.womai.com/upload/backend/2020/07/27/17/1595843285981.png)"></b>
-                                <a href="#">中粮制造&nbsp;&nbsp;</a>
-                            </h3>
-                        </li>
-                        <li class="kinds" id="goods-list">
-                            <h3 class="title">
-                                <b style="background-image:url(https://pic3.womai.com/upload/backend/2020/07/27/17/1595843293436.png)"></b>
-                                <a href="#">我买品牌&nbsp;&nbsp;</a>
-                            </h3>
-                        </li>
-                    </ul>
-                </div>
-                <div class="nav_v">
-                    <span class="nav"><a href="#">团购</a></span>
-                </div>
-                <div class="min_cart">
-                    <div class="btn">
-                        <span class="cart-icon">
+            <div class="min_cart">
+                <div class="btn">
+                    <span class="cart-icon">
                             <i>0</i>
                         </span>
-                        <span class="text">
+                    <span class="text">
                             <a href="#">购物车</a>
                         </span>
-                        <span class="triangle_down"></span>
-                    </div>
+                    <span class="triangle_down"></span>
                 </div>
             </div>
         </div>
+    </div>
     </div>
     <div class="wrapper">
         <div class="banner">
@@ -261,9 +287,9 @@
     <a href="#">服务公告</a>
             </span>
             <ul class="cont_banner">
-                <li><span class="dot"></span><span><a href="#">国庆期间太原订单配送...</a></span></li>
-                <li><span class="dot"></span><span><a href="#">618中粮之夜直播中奖名...</a></span></li>
-                <li><span class="dot"></span><span><a href="#">问卷调研获奖公告</a></span></li>
+                <li><span class="dot"></span><span class="red"><a href="#">国庆期间太原订单配送...</a></span></li>
+                <li><span class="dot"></span><span class="red"><a href="#">618中粮之夜直播中奖名...</a></span></li>
+                <li><span class="dot"></span><span class="red"><a href="#">问卷调研获奖公告</a></span></li>
             </ul>
             <div class="nine-list">
                 <ul>
@@ -350,22 +376,22 @@
                         <span class="png">1F</span>
                         <ul>
                             <li><i style="background-image:url(https://pic1.womai.com/upload/backend/2018/04/23/11/1524453150204.png)"></i>
-                                <a href="#">进口食品</a>
+                                <span class=" red"><a href="#">进口食品</a></span>
                             </li>
                             <li><i style="background-image:url(https://pic2.womai.com/upload/backend/2018/04/23/11/1524453180337.png)"></i>
-                                <a href="#">牛奶乳品</a>
+                                <span class="red"><a href="#">牛奶乳品</a></span>
                             </li>
                             <li><i style="background-image:url(https://pic3.womai.com/upload/backend/2018/04/23/11/1524453216038.png)"></i>
-                                <a href="#">坚果果干</a>
+                                <span class="red"><a href="#">坚果果干</a></span>
                             </li>
                             <li><i style="background-image:url(https://pic1.womai.com/upload/backend/2018/04/23/11/1524453254784.png)"></i>
-                                <a href="#">饮料及水</a>
+                                <span class="red"><a href="#">饮料及水</a></span>
                             </li>
                             <li><i style="background-image:url(https://pic3.womai.com/upload/backend/2018/04/23/11/1524453293897.png)"></i>
-                                <a href="#">饼干糕点</a>
+                                <span class="red"><a href="#">饼干糕点</a></span>
                             </li>
                             <li><i style="background-image:url(https://pic1.womai.com/upload/backend/2018/04/23/11/1524453323715.png)"></i>
-                                <a href="#">进口餐厨</a>
+                                <span class="red"><a href="#">进口餐厨</a></span>
                             </li>
                         </ul>
                         <div class="img">
@@ -385,56 +411,56 @@
                             <li>
                                 <dl>
                                     <dt><a href="#"><img src="https://pic2.womai.com/upload/601/602/60500/65944/65944_1_pic270_7770.jpg" alt=""></a></dt>
-                                    <dd class="name"><a href="#">嘉云牌酸樱桃味糖果罐装200g（德国）</a></dd>
+                                    <dd class="name red"><a href="#">嘉云牌酸樱桃味糖果罐装200g（德国）</a></dd>
                                     <dd class="price"><span>￥19.8</span></dd>
                                 </dl>
                             </li>
                             <li>
                                 <dl>
                                     <dt><a href="#"><img src="https://pic1.womai.com/upload/601/603/606/6060/6064/6082/80415/80415_1_pic270_8103.jpg" alt=""></a></dt>
-                                    <dd class="name"><a href="#">Meiji明治熊猫奶油夹心饼干盒装50g（新加坡）</a></dd>
+                                    <dd class="name red"><a href="#">Meiji明治熊猫奶油夹心饼干盒装50g（新加坡）</a></dd>
                                     <dd class="price"><span>￥13.9</span></dd>
                                 </dl>
                             </li>
                             <li>
                                 <dl>
                                     <dt><a href="#"><img src="https://pic2.womai.com/upload/601/603/606/66102/66108/531785/531785_1_pic270_1915.jpg" alt=""></a></dt>
-                                    <dd class="name"><a href="#">TONGGARDEN东园盐焗夏威夷果罐装150g（泰国）</a></dd>
+                                    <dd class="name red"><a href="#">TONGGARDEN东园盐焗夏威夷果罐装150g（泰国）</a></dd>
                                     <dd class="price"><span>￥83.9</span></dd>
                                 </dl>
                             </li>
                             <li>
                                 <dl>
                                     <dt><a href="#"><img src="https://pic3.womai.com/upload/601/603/606/66102/66116/589481/589481_1_pic270_9288.jpg" alt=""></a></dt>
-                                    <dd class="name"><a href="#">佰多力特级初榨橄榄油瓶装750ml（西班牙）</a></dd>
+                                    <dd class="name red"><a href="#">佰多力特级初榨橄榄油瓶装750ml（西班牙）</a></dd>
                                     <dd class="price"><span>￥96</span></dd>
                                 </dl>
                             </li>
                             <li>
                                 <dl>
                                     <dt><a href="#"><img src="https://pic2.womai.com/upload/601/603/606/66102/214300/496888/644089/644089_1_pic270_149.JPG" alt=""></a></dt>
-                                    <dd class="name"><a href="#">【中粮海外直采】Fan纯果芬桃汁1L（塞浦路斯进口...</a></dd>
+                                    <dd class="name red"><a href="#">【中粮海外直采】Fan纯果芬桃汁1L（塞浦路斯进口...</a></dd>
                                     <dd class="price"><span>￥16.8</span></dd>
                                 </dl>
                             </li>
                             <li>
                                 <dl>
                                     <dt><a href="#"><img src="https://pic1.womai.com/upload/601/603/606/66102/66104/496877/644909/644909_1_pic270_6507.jpg" alt=""></a></dt>
-                                    <dd class="name"><a href="#">Goahead果悠萃浆果果干酸奶涂层饼干178g（荷兰）</a></dd>
+                                    <dd class="name red"><a href="#">Goahead果悠萃浆果果干酸奶涂层饼干178g（荷兰）</a></dd>
                                     <dd class="price"><span>￥25.6</span></dd>
                                 </dl>
                             </li>
                             <li>
                                 <dl>
                                     <dt><a href="#"><img src="https://pic1.womai.com/upload/601/603/606/66102/66110/496881/655163/655163_1_pic270_9230.jpg" alt=""></a></dt>
-                                    <dd class="name"><a href="#">papatonk啪啪通虾片咖喱鸡味袋装85g（印尼）</a></dd>
+                                    <dd class="name red"><a href="#">papatonk啪啪通虾片咖喱鸡味袋装85g（印尼）</a></dd>
                                     <dd class="price"><span>￥26.8</span></dd>
                                 </dl>
                             </li>
                             <li>
                                 <dl>
                                     <dt><a href="#"><img src="https://pic3.womai.com/upload/601/602/10204221/704385/704385_1_pic270_1376.jpg" alt=""></a></dt>
-                                    <dd class="name"><a href="#">芙可蒂代可可脂巧克力威化奶酪味120g（印度尼西亚...</a></dd>
+                                    <dd class="name red"><a href="#">芙可蒂代可可脂巧克力威化奶酪味120g（印度尼西亚...</a></dd>
                                     <dd class="price"><span>￥19.9</span></dd>
                                 </dl>
                             </li>
@@ -445,56 +471,56 @@
                             <li>
                                 <dl>
                                     <dt><a href="#"><img src="https://pic3.womai.com/upload/601/602/10204221/704385/704385_1_pic270_1376.jpg" alt=""></a></dt>
-                                    <dd class="name"><a href="#">芙可蒂代可可脂巧克力威化奶酪味120g（印度尼西亚...</a></dd>
+                                    <dd class="name red"><a href="#">芙可蒂代可可脂巧克力威化奶酪味120g（印度尼西亚...</a></dd>
                                     <dd class="price"><span>￥19.9</span></dd>
                                 </dl>
                             </li>
                             <li>
                                 <dl>
                                     <dt><a href="#"><img src="https://pic1.womai.com/upload/601/603/606/66102/66110/496881/655163/655163_1_pic270_9230.jpg" alt=""></a></dt>
-                                    <dd class="name"><a href="#">papatonk啪啪通虾片咖喱鸡味袋装85g（印尼）</a></dd>
+                                    <dd class="name red"><a href="#">papatonk啪啪通虾片咖喱鸡味袋装85g（印尼）</a></dd>
                                     <dd class="price"><span>￥26.8</span></dd>
                                 </dl>
                             </li>
                             <li>
                                 <dl>
                                     <dt><a href="#"><img src="https://pic1.womai.com/upload/601/603/606/66102/66104/496877/644909/644909_1_pic270_6507.jpg" alt=""></a></dt>
-                                    <dd class="name"><a href="#">Goahead果悠萃浆果果干酸奶涂层饼干178g（荷兰）</a></dd>
+                                    <dd class="name red"><a href="#">Goahead果悠萃浆果果干酸奶涂层饼干178g（荷兰）</a></dd>
                                     <dd class="price"><span>￥25.6</span></dd>
                                 </dl>
                             </li>
                             <li>
                                 <dl>
                                     <dt><a href="#"><img src="https://pic2.womai.com/upload/601/603/606/66102/214300/496888/644089/644089_1_pic270_149.JPG" alt=""></a></dt>
-                                    <dd class="name"><a href="#">【中粮海外直采】Fan纯果芬桃汁1L（塞浦路斯进口...</a></dd>
+                                    <dd class="name red"><a href="#">【中粮海外直采】Fan纯果芬桃汁1L（塞浦路斯进口...</a></dd>
                                     <dd class="price"><span>￥16.8</span></dd>
                                 </dl>
                             </li>
                             <li>
                                 <dl>
                                     <dt><a href="#"><img src="https://pic2.womai.com/upload/601/602/60500/65944/65944_1_pic270_7770.jpg" alt=""></a></dt>
-                                    <dd class="name"><a href="#">嘉云牌酸樱桃味糖果罐装200g（德国）</a></dd>
+                                    <dd class="name red"><a href="#">嘉云牌酸樱桃味糖果罐装200g（德国）</a></dd>
                                     <dd class="price"><span>￥19.8</span></dd>
                                 </dl>
                             </li>
                             <li>
                                 <dl>
                                     <dt><a href="#"><img src="https://pic1.womai.com/upload/601/603/606/6060/6064/6082/80415/80415_1_pic270_8103.jpg" alt=""></a></dt>
-                                    <dd class="name"><a href="#">Meiji明治熊猫奶油夹心饼干盒装50g（新加坡）</a></dd>
+                                    <dd class="name red"><a href="#">Meiji明治熊猫奶油夹心饼干盒装50g（新加坡）</a></dd>
                                     <dd class="price"><span>￥13.9</span></dd>
                                 </dl>
                             </li>
                             <li>
                                 <dl>
                                     <dt><a href="#"><img src="https://pic2.womai.com/upload/601/603/606/66102/66108/531785/531785_1_pic270_1915.jpg" alt=""></a></dt>
-                                    <dd class="name"><a href="#">TONGGARDEN东园盐焗夏威夷果罐装150g（泰国）</a></dd>
+                                    <dd class="name red"><a href="#">TONGGARDEN东园盐焗夏威夷果罐装150g（泰国）</a></dd>
                                     <dd class="price"><span>￥83.9</span></dd>
                                 </dl>
                             </li>
                             <li>
                                 <dl>
                                     <dt><a href="#"><img src="https://pic3.womai.com/upload/601/603/606/66102/66116/589481/589481_1_pic270_9288.jpg" alt=""></a></dt>
-                                    <dd class="name"><a href="#">佰多力特级初榨橄榄油瓶装750ml（西班牙）</a></dd>
+                                    <dd class="name red"><a href="#">佰多力特级初榨橄榄油瓶装750ml（西班牙）</a></dd>
                                     <dd class="price"><span>￥96</span></dd>
                                 </dl>
                             </li>
@@ -505,11 +531,464 @@
                     </div>
                 </div>
             </div>
+            <div class="floor2 floor">
+                <div class="floor2_l">
+                    <h3>
+                        <i></i> 国产食品
+                    </h3>
+                    <div class="con">
+                        <span class="png">2F</span>
+                        <ul>
+                            <li><i style="background-image:url(https://pic2.womai.com/upload/backend/2016/04/14/15/1460617797482.png)"></i>
+                                <span class="red"><a href="#">食用油</a></span>
+                            </li>
+                            <li><i style="background-image:url(https://pic3.womai.com/upload/backend/2016/04/14/15/1460617820298.png)"></i>
+                                <span class="red"><a href="#">产区大米</a></span>
+                            </li>
+                            <li><i style="background-image:url(https://pic2.womai.com/upload/backend/2016/04/14/15/1460617929170.png)"></i>
+                                <span class="red"><a href="#">南北干货</a></span>
+                            </li>
+                            <li><i style="background-image:url(https://pic3.womai.com/upload/backend/2016/04/14/15/1460617920822.png)"></i>
+                                <span class="red"><a href="#">厨房调味</a></span>
+                            </li>
+                            <li><i style="background-image:url(https://pic1.womai.com/upload/backend/2016/04/14/15/1460617911055.png)"></i>
+                                <span class="red"><a href="#">面粉挂面</a></span>
+                            </li>
+                            <li><i style="background-image:url(https://pic2.womai.com/upload/backend/2016/04/14/15/1460617862747.png)"></i>
+                                <span class="red"><a href="#">有机粮油</a></span>
+                            </li>
+                        </ul>
+                        <div class="img">
+                            <div class="aImg"><img src="https://static.womai.com/zhongliang/city/common/images/animation.png" alt=""></div>
+                            <a href="#"><img src="https://pic1.womai.com/upload/backend/2020/09/18/18/1600424876872.jpg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="floor2_r">
+                    <!-- Tab切换 -->
+                    <ul class="recomm">
+                        <li class="cur">精选推荐</li>
+                        <li>热卖推荐</li>
+                    </ul>
+                    <div class="con-tab show">
+                        <ul>
+                            <li>
+                                <dl>
+                                    <dt><a href="#"><img src="https://pic2.womai.com/upload/601/603/606/6200/6201/6207/54597/54597_1_pic270_9316.jpg" alt=""></a></dt>
+                                    <dd class="name red"><a href="#">【中粮】福临门天天五谷食用植物调和油900ml（新...</a></dd>
+                                    <dd class="price"><span>￥15.9</span></dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt><a href="#"><img src="https://pic2.womai.com/upload/601/603/606/6200/6215/6213/530252/530252_1_pic270_7981.jpg" alt=""></a></dt>
+                                    <dd class="name red"><a href="#">孟乍隆苏吝府茉莉香米5kg</a></dd>
+                                    <dd class="price"><span>￥85</span></dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt><a href="#"><img src="https://pic1.womai.com/upload/601/603/606/6900/6906/555523/555523_1_pic270_2912.jpg" alt=""></a></dt>
+                                    <dd class="name red"><a href="#">茶人岭 特级安溪铁观音清香型盒装252g*2 （臻品彩...</a></dd>
+                                    <dd class="price"><span>￥440</span></dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt><a href="#"><img src="https://pic3.womai.com/upload/601/603/606/6200/6215/6213/556018/556018_1_pic270_7402.jpg" alt=""></a></dt>
+                                    <dd class="name red"><a href="#">孟乍隆精品清莱府茉莉香米5kg</a></dd>
+                                    <dd class="price"><span>￥109.9</span></dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt><a href="#"><img src="https://pic1.womai.com/upload/601/603/606/7400/7402/560002/560002_1_pic270_8906.jpg" alt=""></a></dt>
+                                    <dd class="name red"><a href="#">SKIPPY四季宝柔滑花生酱510g...</a></dd>
+                                    <dd class="price"><span>￥29.9</span></dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt><a href="#"><img src="https://pic2.womai.com/upload/601/603/606/7400/7402/560004/560004_1_pic270_4808.jpg" alt=""></a></dt>
+                                    <dd class="name red"><a href="#">SKIPPY四季宝颗粒花生酱510g</a></dd>
+                                    <dd class="price"><span>￥29.9</span></dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt><a href="#"><img src="https://pic3.womai.com/upload/601/603/606/6200/6201/6207/633435/633435_1_pic270_4094.jpg" alt=""></a></dt>
+                                    <dd class="name red"><a href="#">【中粮】福临门 营养家食用植物调和油5L（非转基...</a></dd>
+                                    <dd class="price"><span>￥89.9</span></dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt><a href="#"><img src="https://pic1.womai.com/upload/601/603/606/6200/6205/637723/637723_1_pic270_8312.jpg" alt=""></a></dt>
+                                    <dd class="name red"><a href="#">【中粮】福临门家宴小麦粉5kg...</a></dd>
+                                    <dd class="price"><span>￥24.9</span></dd>
+                                </dl>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="con-tab unshow">
+                        <ul>
+                            <li>
+                                <dl>
+                                    <dt><a href="#"><img src="https://pic1.womai.com/upload/601/603/606/6200/6205/637723/637723_1_pic270_8312.jpg" alt=""></a></dt>
+                                    <dd class="name red"><a href="#">【中粮】福临门家宴小麦粉5kg...</a></dd>
+                                    <dd class="price"><span>￥24.9</span></dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt><a href="#"><img src="https://pic3.womai.com/upload/601/603/606/6200/6201/6207/633435/633435_1_pic270_4094.jpg" alt=""></a></dt>
+                                    <dd class="name red"><a href="#">【中粮】福临门 营养家食用植物调和油5L（非转基...</a></dd>
+                                    <dd class="price"><span>￥89.9</span></dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt><a href="#"><img src="https://pic2.womai.com/upload/601/603/606/7400/7402/560004/560004_1_pic270_4808.jpg" alt=""></a></dt>
+                                    <dd class="name red"><a href="#">SKIPPY四季宝颗粒花生酱510g</a></dd>
+                                    <dd class="price"><span>￥29.9</span></dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt><a href="#"><img src="https://pic1.womai.com/upload/601/603/606/7400/7402/560002/560002_1_pic270_8906.jpg" alt=""></a></dt>
+                                    <dd class="name red"><a href="#">SKIPPY四季宝柔滑花生酱510g...</a></dd>
+                                    <dd class="price"><span>￥29.9</span></dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt><a href="#"><img src="https://pic2.womai.com/upload/601/603/606/6200/6201/6207/54597/54597_1_pic270_9316.jpg" alt=""></a></dt>
+                                    <dd class="name red"><a href="#">【中粮】福临门天天五谷食用植物调和油900ml（新...</a></dd>
+                                    <dd class="price"><span>￥15.9</span></dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt><a href="#"><img src="https://pic2.womai.com/upload/601/603/606/6200/6215/6213/530252/530252_1_pic270_7981.jpg" alt=""></a></dt>
+                                    <dd class="name red"><a href="#">孟乍隆苏吝府茉莉香米5kg</a></dd>
+                                    <dd class="price"><span>￥85</span></dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt><a href="#"><img src="https://pic1.womai.com/upload/601/603/606/6900/6906/555523/555523_1_pic270_2912.jpg" alt=""></a></dt>
+                                    <dd class="name red"><a href="#">茶人岭 特级安溪铁观音清香型盒装252g*2 （臻品彩...</a></dd>
+                                    <dd class="price"><span>￥440</span></dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt><a href="#"><img src="https://pic3.womai.com/upload/601/603/606/6200/6215/6213/556018/556018_1_pic270_7402.jpg" alt=""></a></dt>
+                                    <dd class="name red"><a href="#">孟乍隆精品清莱府茉莉香米5kg</a></dd>
+                                    <dd class="price"><span>￥109.9</span></dd>
+                                </dl>
+                            </li>
+
+
+
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="foot_nav width">
+            <ul class="nav-con">
+                <li class="section">
+                    <h3 class="red"><a href="#">生鲜蔬果</a> </h3>
+                    <div class="pic">
+                        <a href="#"><img src="https://pic2.womai.com/upload/backend/2017/01/09/16/1483950878690.png" alt=""></a>
+                    </div>
+                    <ul>
+                        <li class="red"><a href="#">国产水果</a></li>
+                        <li class="red"><a href="#">海鲜水产</a></li>
+                        <li class="red"><a href="#">生肉禽蛋</a></li>
+                        <li class="red"><a href="#">蔬菜</a></li>
+                        <li class="red"><a href="#">低温乳品/饮料</a></li>
+                        <li class="red"><a href="#">主食</a></li>
+                        <li class="red"><a href="#">熟食/佐餐</a></li>
+                        <li class="red"><a href="#">冰激凌</a></li>
+                        <li class="red"><a href="#">礼品礼券</a></li>
+                    </ul>
+                </li>
+                <li class="section">
+                    <h3 class="red"><a href="#">进口食品</a> </h3>
+                    <div class="pic">
+                        <a href="#"><img src="https://pic1.womai.com/upload/backend/2017/01/09/16/1483950922825.png" alt=""></a>
+                    </div>
+                    <ul>
+                        <li class="red"><a href="#">进口海外直采</a></li>
+                        <li class="red"><a href="#">进口牛奶/奶粉</a></li>
+                        <li class="red"><a href="#">进口饮料/水</a></li>
+                        <li class="red"><a href="#">进口咖啡茶叶</a></li>
+                        <li class="red"><a href="#">进口冲饮果茶</a></li>
+                        <li class="red"><a href="#">进口零食/膨化</a></li>
+                        <li class="red"><a href="#">进口饼干/糕点</a></li>
+                        <li class="red"><a href="#">进口糖果/巧克力</a></li>
+                        <li class="red"><a href="#">进口果干/坚果</a></li>
+                        <li class="red"><a href="#">进口食用油</a></li>
+                    </ul>
+                </li>
+                <li class="section">
+                    <h3 class="red"><a href="#">酒饮冲调</a> </h3>
+                    <div class="pic">
+                        <a href="#"><img src="https://pic2.womai.com/upload/backend/2017/01/09/16/1483950972251.png" alt=""></a>
+                    </div>
+                    <ul>
+                        <li class="red"><a href="#">白酒/养生酒</a></li>
+                        <li class="red"><a href="#">葡萄酒</a></li>
+                        <li class="red"><a href="#">啤酒</a></li>
+                        <li class="red"><a href="#">洋酒</a></li>
+                        <li class="red"><a href="#">进口海外直采酒</a></li>
+                        <li class="red"><a href="#">饮料</a></li>
+                        <li class="red"><a href="#">饮用水</a></li>
+                        <li class="red"><a href="#">咖啡/冲调</a></li>
+                        <li class="red"><a href="#">早餐谷物</a></li>
+                        <li class="red"><a href="#">茶</a></li>
+                    </ul>
+                </li>
+                <li class="section">
+                    <h3 class="red"><a href="#">休闲零食</a> </h3>
+                    <div class="pic">
+                        <a href="#"><img src="https://pic1.womai.com/upload/backend/2017/01/09/16/1483951009519.png" alt=""></a>
+                    </div>
+                    <ul>
+                        <li class="red"><a href="#">休闲零食</a></li>
+                        <li class="red"><a href="#">饼干蛋糕</a></li>
+                        <li class="red"><a href="#">糖果巧克力</a></li>
+                        <li class="red"><a href="#">礼卡礼券</a></li>
+                        <li class="red"><a href="#">地方特产</a></li>
+                        <li class="red"><a href="#">营养健康</a></li>
+                        <li class="red"><a href="#">营养成分</a></li>
+                        <li class="red"><a href="#">滋补养生</a></li>
+                    </ul>
+                </li>
+                <li class="section " id="none">
+                    <h3 class="red"><a href="#">粮油副食</a> </h3>
+                    <div class="pic">
+                        <a href="#"><img src="https://pic2.womai.com/upload/backend/2017/01/09/16/1483951056182.png" alt=""></a>
+                    </div>
+                    <ul>
+                        <li class="red"><a href="#">食用油</a></li>
+                        <li class="red"><a href="#">米面杂粮</a></li>
+                        <li class="red"><a href="#">南北干货</a></li>
+                        <li class="red"><a href="#">调味品</a></li>
+                        <li class="red"><a href="#">方便食品</a></li>
+                        <li class="red"><a href="#">粮油礼盒</a></li>
+                        <li class="red"><a href="#">有机食品</a></li>
+                    </ul>
+                </li>
+                <li class="section">
+                    <h3 class="red"><a href="#">中粮出品</a> </h3>
+                    <div class="pic">
+                        <a href="#"><img src="https://pic1.womai.com/upload/backend/2019/08/30/09/1567128093749.png" alt=""></a>
+                    </div>
+                    <ul>
+                        <li class="red"><a href="#">福临门</a></li>
+                        <li class="red"><a href="#">蒙牛</a></li>
+                        <li class="red"><a href="#">中茶</a></li>
+                        <li class="red"><a href="#">香雪</a></li>
+                        <li class="red"><a href="#">初萃</a></li>
+                        <li class="red"><a href="#">悠采</a></li>
+                        <li class="red"><a href="#">山萃</a></li>
+                    </ul>
+                </li>
+                <li class="section">
+                    <h3 class="red"><a href="#">母婴食品</a> </h3>
+                    <div class="pic">
+                        <a href="#"><img src="https://pic1.womai.com/upload/backend/2019/08/30/09/1567128140975.png" alt=""></a>
+                    </div>
+                    <ul>
+                        <li class="red"><a href="#">母婴食品</a></li>
+                        <li class="red"><a href="#">孕婴奶粉</a></li>
+                        <li class="red"><a href="#">婴幼辅食</a></li>
+                        <li class="red"><a href="#">婴幼营养</a></li>
+                        <li class="red"><a href="#">进口零食</a></li>
+                        <li class="red"><a href="#">进口调味</a></li>
+                    </ul>
+                </li>
+                <li class="section">
+                    <h3 class="red"><a href="#">自有品牌</a> </h3>
+                    <div class="pic">
+                        <a href="#"><img src="https://pic3.womai.com/upload/backend/2017/01/09/16/1483951369623.png" alt=""></a>
+                    </div>
+                    <ul>
+                        <li class="red"><a href="#">食用油</a></li>
+                        <li class="red"><a href="#">米面杂粮</a></li>
+                        <li class="red"><a href="#">南北干货</a></li>
+                        <li class="red"><a href="#">面点主食</a></li>
+                        <li class="red"><a href="#">燕麦片</a></li>
+                        <li class="red"><a href="#">牛奶/酸奶</a></li>
+                        <li class="red"><a href="#">休闲食品</a></li>
+                        <li class="red"><a href="#">蜂蜜/茶</a></li>
+                    </ul>
+                </li>
+            </ul>
         </div>
     </div>
     <div class="foot">
-
+        <div class="healper width">
+            <ul class="mode-list">
+                <li class="mode">
+                    <h3 class="red"><a href="#">新手上路</a> </h3>
+                    <ul>
+                        <li class="green"><a href="#">新用户演示</a> </li>
+                        <li class="green"><a href="#">会员积分计划</a> </li>
+                        <li class="green"><a href="#">会员等级规则</a> </li>
+                        <li class="green"><a href="#">售后服务政策</a> </li>
+                        <li class="green"><a href="#">我买网发票制度</a> </li>
+                    </ul>
+                </li>
+                <li class="mode">
+                    <h3 class="red"><a href="#">付款方式</a> </h3>
+                    <ul>
+                        <li class="green"><a href="#">支付方式</a> </li>
+                        <li class="green"><a href="#">支付常见问题</a> </li>
+                        <li class="green"><a href="#">激活礼品卡</a> </li>
+                        <li class="green"><a href="#">我买卡</a> </li>
+                        <li class="green"><a href="#">电子礼品卡说明及使用</a> </li>
+                    </ul>
+                </li>
+                <li class="mode">
+                    <h3 class="red"><a href="#">配送信息</a> </h3>
+                    <ul>
+                        <li class="green"><a href="#">配送运费信息</a> </li>
+                        <li class="green"><a href="#">生鲜速配运费标准</a> </li>
+                        <li class="green"><a href="#">订单处理时间</a> </li>
+                        <li class="green"><a href="#">验货于拒收政策</a> </li>
+                        <li class="green"><a href="#">用券订单结算说明</a> </li>
+                    </ul>
+                </li>
+                <li class="mode">
+                    <h3 class="red"><a href="#">我买提示</a> </h3>
+                    <ul>
+                        <li class="green"><a href="#">找回密码</a> </li>
+                        <li class="green"><a href="#">联系我们</a> </li>
+                        <li class="green"><a href="#">常见热点问题</a> </li>
+                        <li class="green"><a href="#">关于跨境购</a> </li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="ervma">
+                <dl>
+                    <dt>中粮我买网APP</dt>
+                    <dd><img src="https://pic2.womai.com/upload/backend/2016/04/16/13/1460784082988.png" alt=""></dd>
+                </dl>
+                <dl>
+                    <dt>中粮我买网微信</dt>
+                    <dd><img src="https://pic2.womai.com/upload/backend/2016/04/16/13/1460784096978.jpg" alt=""></dd>
+                </dl>
+            </div>
+        </div>
+        <div class="about width">
+            <div class="link">
+                <span class="underline"><a href="#">关于我们</a></span>
+                <span class="line">|</span>
+                <span class="underline"><a href="#">免责条款</a></span>
+                <span class="line">|</span>
+                <span class="underline"><a href="#">中粮集团</a></span>
+                <span class="line">|</span>
+                <span class="underline"><a href="#">服务协议</a></span>
+                <span class="line">|</span>
+                <span class="underline"><a href="#">隐私协议</a></span>
+                <span class="line">|</span>
+                <span class="underline"><a href="#">友情链接</a></span>
+                <span class="line">|</span>
+                <span class="underline"><a href="#">热词搜索</a></span>
+                <span class="line">|</span>
+                <span class="underline"><a href="#">客服电话：400-005-5678</a></span>
+                <span class="line">|</span>
+                <span class="tuanmobile">企业采购热线：4008-117-588</span>
+            </div>
+            <div class="footer">
+                <div class="img">
+                    <a href="#"><img src="https://pic2.womai.com/upload/backend/2020/08/13/15/1597303381966.png" alt=""></a>
+                </div>
+                <div class="copyright">
+                    <span>Copyright©2009-2020  womai.com.hk All Rights Reserved 中粮海优（北京）有限公司版权所有</span>
+                    <span>中粮海优（北京）有限公司 北京市朝阳区朝阳门南大街8号18F-09室</span>
+                    <div class="beijing">
+                        <a href="#">
+                            <i></i>
+                            <p>京公网安备 11010102000458号</p>
+                        </a>
+                        <p> 京ICP备 13003995号 </p>
+                    </div>
+                    <div class="permit">
+                        <span class="red"><a href="#">营业执照（统一社会信用代码）91110000055590239L</a></span> 食品经营许可证：JY11105020028185
+                    </div>
+                </div>
+            </div>
+            <div class="integrity width">
+                <a href="#"><i></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="l_toolbar">
+        <div class="toolbar-left">
+            <div class="toolbar-top">
+                <div class="toolbar-car">
+                    <em></em>购物车
+                    <span class="goodsPCS">0</span>
+                </div>
+            </div>
+            <div class="toolbar-footer">
+                <ul>
+                    <li>
+                        <span>我的收藏</span>
+                        <em class="star"></em>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>账户中心</span>
+                            <em class="price"></em>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>在线充值</span>
+                            <em class="in"></em>
+                        </a>
+                    </li>
+                    <li>
+                        <span><a href="#">
+                                <img src="https://pic2.womai.com/upload/backend/2016/04/16/23/1460821657247.jpg" alt="">
+                            </a></span>
+                        <em class="erv"></em>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>顶部</span>
+                            <em class="top"></em>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="header-search">
+        <div class="width">
+            <div class="log">
+                <a href="#"><img src="https://pic3.womai.com/upload/backend/2020/08/13/15/1597302533423.png" alt=""></a>
+            </div>
+            <div class="search">
+                <div class="search_l">
+                    <em></em>
+                    <input type="text" value="国货当红 食在匠心" data-defvalue="国货当红 食在匠心">
+                    <div class="btn">
+                        <button type="submit">搜索</button>
+                    </div>
+                </div>
+            </div>
+            <div class="number">企业采购热线<br><span>4008-117-588</span></div>
+        </div>
     </div>
 </body>
+
 
 </html>

@@ -4,6 +4,12 @@ $font:12px/150% Arial,
 Tahoma,
 "宋体";
 $none:none;
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
 body {
     color: $color;
     font: $font;
