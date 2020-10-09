@@ -39,6 +39,7 @@
   font: 14px/36px "微软雅黑";
   color: #bbb;
   border: none;
+  outline: none;
 }
 .header .search_wrap .search_l .btn {
   width: 100px;

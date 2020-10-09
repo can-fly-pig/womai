@@ -24,6 +24,7 @@
   text-align: center;
 }
 .main_nav_wrap .width .all_kinds .cont {
+  position: relative;
   background-color: #C70019;
   position: relative;
   width: 210px;
@@ -81,7 +82,7 @@
 }
 .main_nav_wrap .width .min_cart .btn .cart-icon i {
   position: absolute;
-  left: 65px;
+  left: 52px;
   top: -8px;
   width: 25px;
   height: 20px;
@@ -111,6 +112,44 @@
   background: url(icon2.png) no-repeat 0 -40px;
   overflow: hidden;
 }
+.main_nav_wrap .width .min_cart .cur {
+  top: 1px;
+  z-index: 105;
+  height: 22px;
+  margin: 0;
+  border: 1px solid #3a9901;
+  border-bottom: none;
+  background-color: #fff;
+}
+.main_nav_wrap .width .min_cart .cart_cont {
+  position: absolute;
+  top: 48px;
+  right: 0px;
+  z-index: 104;
+  width: 343px;
+  padding: 15px 0px 8px 15px;
+  background-color: #fff;
+  border: 1px solid #3a9901;
+  overflow: hidden;
+}
+.main_nav_wrap .width .min_cart .cart_cont .free {
+  line-height: 20px;
+  text-align: center;
+}
+.main_nav_wrap .width .min_cart .cart_cont .free span {
+  display: inline-block;
+  width: 100%;
+  height: 46px;
+  margin-bottom: 6px;
+}
+.main_nav_wrap .width .min_cart .cart_cont .free a {
+  display: inline-block;
+  width: 100%;
+  color: #c40000;
+}
+.main_nav_wrap .width .min_cart .none {
+  display: none;
+}
 
 #goods-list {
   float: left;
@@ -125,6 +164,9 @@
 }
 #goods-list:hover b {
   background-position: -19px 0;
+}
+#goods-list:hover .sub_kinds {
+  display: block;
 }
 #goods-list h3 {
   width: 172px;
@@ -145,6 +187,20 @@
 #goods-list h3 a {
   color: #fff;
   font-weight: normal;
+}
+#goods-list .sub_kinds {
+  position: absolute;
+  top: 0px;
+  left: 209px;
+  z-index: 30;
+  display: none;
+  width: 757px;
+  height: 419px;
+  padding: 30px 15px 0 15px;
+  border-right: 1px solid #3a9900;
+  border-bottom: 1px solid #3a9900;
+  background-color: #fff;
+  overflow-y: auto;
 }
 
 /*# sourceMappingURL=main_nav_wrap.css.map */

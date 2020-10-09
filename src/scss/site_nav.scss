@@ -49,6 +49,18 @@ $margin-r:20px;
                 z-index: $zoo;
                 padding-left: $padding-left;
                 background: $bc;
+                .cityshow {
+                    span {
+                        position: relative;
+                        z-index: 3;
+                        display: inline-block;
+                        height: 30px;
+                        line-height: 30px;
+                        padding: 0 20px 0 14px;
+                        border: 1px solid #f5f5f5;
+                        cursor: pointer;
+                    }
+                }
             }
         }
         .nav_r {
@@ -58,15 +70,6 @@ $margin-r:20px;
                 float: $l;
                 padding: $padding;
                 position: relative;
-                .png {
-                    display: inline-block;
-                    width: 6px;
-                    height: 3px;
-                    margin: 3px 0 0 5px;
-                    vertical-align: middle;
-                    background: url(icon2.png) no-repeat -92px 0px;
-                    overflow: hidden;
-                }
             }
             .count:hover {
                 border: #3a9900 1px solid;
@@ -78,15 +81,14 @@ $margin-r:20px;
             }
             .client {
                 position: relative;
-                .client:hover {
+                &:hover {
                     border: #3a9900 1px solid;
                     border-bottom: white;
                     background-color: white;
                     box-sizing: border-box;
-                    // .server {
-                    //     display: block;
-                    //     box-sizing: border-box;
-                    // }
+                    .server {
+                        display: block;
+                    }
                 }
             }
             b {
@@ -106,9 +108,9 @@ $margin-r:20px;
             .server {
                 display: none;
                 position: absolute;
-                width: 72px;
+                width: 70px;
                 top: 30px;
-                left: 0px;
+                left: -1px;
                 border: 1px solid #3a9900;
                 padding: 5px;
                 background-color: #fff;
@@ -151,6 +153,16 @@ $margin-r:20px;
     }
 }
 
+.png {
+    display: inline-block;
+    width: 6px;
+    height: 3px;
+    margin: 0px 0 0 5px;
+    vertical-align: middle;
+    background: url(icon2.png) no-repeat -92px 0px;
+    overflow: hidden;
+}
+
 // #city-pick {
 //     .cityshow {
 //         text-align: $l;
@@ -172,7 +184,7 @@ $margin-r:20px;
     color: #C70019;
 }
 
-.red:hover a {
+body .wrapper .red:hover a {
     color: #C70019;
     text-decoration: underline;
 }

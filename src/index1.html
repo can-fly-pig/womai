@@ -20,6 +20,8 @@
     <link rel="stylesheet" href="css/foot.css">
     <link rel="stylesheet" href="css/l_toolbar.css">
     <link rel="stylesheet" href="css/header-search.css">
+
+
 </head>
 
 <body>
@@ -36,7 +38,7 @@
                         <p>
                             <span class="city">当前城市：</span>
                             <a href="#" class="cityshow">
-                                <span class="text"></span>
+                                <span class="text">杭州<i class="png"></i></span>
                             </a>
                         </p>
                         <!-- 三级联动 -->
@@ -54,10 +56,10 @@
                 <ul class="nav_l" id="top_login_span">
                     <li class="welcome">hi，欢迎来我买网!</li>
                     <li class="t_item red">
-                        <a href="#">登录</a>
+                        <a href="login.html">登录</a>
                     </li>
                     <li class="t_item red">
-                        <a href="#">注册</a>
+                        <a href="registry.html">注册</a>
                     </li>
                 </ul>
                 <ul class="nav_r">
@@ -109,7 +111,7 @@
                 </ul>
             </div>
         </div>
-        <div class="header clearfix png">
+        <div class="header clearfix">
             <div class="width">
                 <div class="log">
                     <a href="#">
@@ -154,6 +156,7 @@
                                 <span class="underline"><a href="#">肉禽水产&nbsp;&nbsp;</a></span>
                                 <span class="underline"><a href="#">水果蔬菜</a></span>
                             </h3>
+                            <div class="sub_kinds"></div>
                         </li>
                         <li class="kinds" id="goods-list">
                             <h3 class="title">
@@ -161,6 +164,7 @@
                                 <span class="underline"><a href="#">进口食品&nbsp;&nbsp;</a></span>
                                 <span class="underline"><a href="#">进口直采</a></span>
                             </h3>
+                            <div class="sub_kinds"></div>
                         </li>
                         <li class="kinds" id="goods-list">
                             <h3 class="title">
@@ -169,6 +173,7 @@
                                 <span class="underline"><a href="#">饮料/冲调&nbsp;&nbsp;</a></span>
                                 <span class="underline"><a href="#">茶&nbsp;&nbsp;</a></span>
                             </h3>
+                            <div class="sub_kinds"></div>
                         </li>
                         <li class="kinds" id="goods-list">
                             <h3 class="title">
@@ -176,6 +181,7 @@
                                 <span class="underline"><a href="#">休闲零食&nbsp;&nbsp;</a></span>
                                 <span class="underline"><a href="#">地方特产</a></span>
                             </h3>
+                            <div class="sub_kinds"></div>
                         </li>
                         <li class="kinds" id="goods-list">
                             <h3 class="title">
@@ -183,6 +189,7 @@
                                 <span class="underline"><a href="#">营养健康&nbsp;&nbsp;</a></span>
                                 <span class="underline"><a href="#">奶制品</a></span>
                             </h3>
+                            <div class="sub_kinds"></div>
                         </li>
                         <li class="kinds" id="goods-list">
                             <h3 class="title">
@@ -190,30 +197,35 @@
                                 <span class="underline"><a href="#">粮油副食&nbsp;&nbsp;</a></span>
                                 <span class="underline"><a href="#">调味干货</a></span>
                             </h3>
+                            <div class="sub_kinds"></div>
                         </li>
                         <li class="kinds" id="goods-list">
                             <h3 class="title">
                                 <b style="background-image:url(https://pic3.womai.com/upload/backend/2020/07/27/17/1595843264555.png)"></b>
                                 <span class="underline"><a href="#">母婴食品&nbsp;&nbsp;</a></span>
                             </h3>
+                            <div class="sub_kinds"></div>
                         </li>
                         <li class="kinds" id="goods-list">
                             <h3 class="title">
                                 <b style="background-image:url(https://pic3.womai.com/upload/backend/2020/07/27/17/1595843275397.png)"></b>
                                 <span class="underline"><a href="#">礼卡礼券&nbsp;&nbsp;</a></span>
                             </h3>
+                            <div class="sub_kinds"></div>
                         </li>
                         <li class="kinds" id="goods-list">
                             <h3 class="title">
                                 <b style="background-image:url(https://pic3.womai.com/upload/backend/2020/07/27/17/1595843285981.png)"></b>
                                 <span class="underline"><a href="#">中粮制造&nbsp;&nbsp;</a></span>
                             </h3>
+                            <div class="sub_kinds"></div>
                         </li>
                         <li class="kinds" id="goods-list">
                             <h3 class="title">
                                 <b style="background-image:url(https://pic3.womai.com/upload/backend/2020/07/27/17/1595843293436.png)"></b>
                                 <span class="underline"><a href="#">我买品牌&nbsp;&nbsp;</a></span>
                             </h3>
+                            <div class="sub_kinds"></div>
                         </li>
                     </ul>
                 </div>
@@ -228,7 +240,18 @@
                         <span class="text">
                             <a href="#">购物车</a>
                         </span>
-                        <span class="triangle_down"></span>
+                        <span class="triangle_down arrow"></span>
+                    </div>
+                    <div class="cart_cont none">
+                        <div class="free" style="display:block;">
+                            <span>
+                                <img src="https://static.womai.com/zhongliang/city/common/images/cart-no.jpg" alt="">
+                            </span>
+                            <p>
+                                购物车中还没有商品，快去选购吧！
+                                <a href="index1.html">去首页看看吧</a>
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -238,10 +261,10 @@
         <div class="banner">
             <!-- 轮播图 -->
             <div class="arrow">
-                <a href="javascript:void(0)" class="fl">&lt;</a>
-                <a href="javascript:void(0)" class="fr">&gt;</a>
+                <button class="fl " id="arrow_l" onclick="checkLeft()">&lt;</button>
+                <button class="fr " id="arrow_r" onclick="checkRight()">&gt;</button>
             </div>
-            <ul>
+            <ul class="piclist">
                 <li style="opacity: 1;">
                     <a href="#">
                         <img src="https://pic1.womai.com/upload/backend/2020/09/18/18/1600424109205.jpg" alt="">
@@ -273,7 +296,7 @@
                     </a>
                 </li>
             </ul>
-            <ol>
+            <ol class="btnlist">
                 <li></li>
                 <li></li>
                 <li></li>
@@ -395,7 +418,7 @@
                             </li>
                         </ul>
                         <div class="img">
-                            <div class="aImg"><img src="https://static.womai.com/zhongliang/city/common/images/animation.png" alt=""></div>
+                            <div class="aImg none"><img src="https://static.womai.com/zhongliang/city/common/images/animation.png" alt=""></div>
                             <a href="#"><img src="https://pic1.womai.com/upload/backend/2019/07/30/15/1564472302582.jpg" alt=""></a>
                         </div>
                     </div>
@@ -403,8 +426,8 @@
                 <div class="floor1_r">
                     <!-- Tab切换 -->
                     <ul class="recomm">
-                        <li class="cur">精选推荐</li>
-                        <li>热卖推荐</li>
+                        <li class="cur tabchoise">精选推荐</li>
+                        <li class="tabchoise">热卖推荐</li>
                     </ul>
                     <div class="con-tab show">
                         <ul>
@@ -567,8 +590,8 @@
                 <div class="floor2_r">
                     <!-- Tab切换 -->
                     <ul class="recomm">
-                        <li class="cur">精选推荐</li>
-                        <li>热卖推荐</li>
+                        <li class="cur tabchoise">精选推荐</li>
+                        <li class="tabchoise">热卖推荐</li>
                     </ul>
                     <div class="con-tab show">
                         <ul>
@@ -989,6 +1012,24 @@
         </div>
     </div>
 </body>
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="../src/script/index1.js"></script>
+<script defer="defer">
+    var x = 0;
 
+    function checkRight() {
+        x = x + 1;
+        if (x > 5) {
+            x = 0
+        }
+    }
+
+    function checkLeft() {
+        x = x - 1;
+        if (x < 0) {
+            x = 5
+        }
+    }
+</script>
 
 </html>

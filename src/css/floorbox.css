@@ -79,17 +79,26 @@
 .floor1 .floor1_l .con ul li a {
   color: #5e7090;
 }
+.floor1 .floor1_l .con .img {
+  position: relative;
+}
 .floor1 .floor1_l .con .img .aImg {
+  position: absolute;
   left: -242px;
-  display: none;
   height: 400px;
   width: 242px;
 }
 
-.floor1_r {
+.floor1_r,
+.floor2_r {
   width: 968px;
 }
-.floor1_r .recomm {
+.floor1_r dl:hover a,
+.floor2_r dl:hover a {
+  color: #8cb91e;
+}
+
+.recomm {
   display: flex;
   height: 36px;
   margin: 0 0 2px 30px;
@@ -97,48 +106,57 @@
   line-height: 36px;
   color: #434343;
 }
-.floor1_r .recomm .cur {
+.recomm .cur {
   border-bottom: 2px solid #a1c0f6;
   color: #434343;
 }
-.floor1_r .recomm li {
+.recomm li {
   height: 36px;
   margin-right: 30px;
   padding: 0 5px;
   text-align: center;
   overflow: hidden;
 }
-.floor1_r .show {
+
+.show {
   display: block;
 }
-.floor1_r .unshow {
+
+.unshow {
   display: none;
 }
-.floor1_r .con-tab ul {
+
+.con-tab ul {
   display: flex;
   flex-wrap: wrap;
   border-top: 1px solid #a1c0f6;
 }
-.floor1_r .con-tab li {
+.con-tab li {
   width: 241px;
   height: 250px;
   border-bottom: 1px solid #ededed;
   border-right: 1px solid #ededed;
   overflow: hidden;
 }
-.floor1_r .con-tab dt {
+.con-tab dt {
   position: relative;
   width: 240px;
   height: 190px;
   text-align: center;
 }
-.floor1_r .con-tab dt img {
+.con-tab dt img {
+  position: relative;
   width: 180px;
   height: 180px;
-  margin: 0 auto;
   margin-top: 6px;
 }
-.floor1_r .con-tab .name {
+.con-tab dt img .aImg {
+  position: absolute;
+}
+.con-tab dt img .none {
+  display: none;
+}
+.con-tab .name {
   height: 24px;
   font-size: 14px;
   line-height: 24px;
@@ -148,7 +166,7 @@
   text-overflow: ellipsis;
   overflow: hidden;
 }
-.floor1_r .con-tab .price {
+.con-tab .price {
   width: 200px;
   margin-left: 20px;
   text-overflow: ellipsis;
@@ -229,86 +247,19 @@
   height: 22px;
 }
 .floor2 .floor2_l .con ul li a {
-  color: #5e7090;
+  color: #89785b;
+}
+.floor2 .floor2_l .con .img {
+  position: relative;
 }
 .floor2 .floor2_l .con .img .aImg {
+  position: absolute;
   left: -242px;
-  display: none;
   height: 400px;
   width: 242px;
 }
-
-.floor2_r {
-  width: 968px;
-}
-.floor2_r .recomm {
-  display: flex;
-  height: 36px;
-  margin: 0 0 2px 30px;
-  font-size: 16px;
-  line-height: 36px;
-  color: #434343;
-}
-.floor2_r .recomm .cur {
-  border-bottom: 2px solid #a1c0f6;
-  color: #434343;
-}
-.floor2_r .recomm li {
-  height: 36px;
-  margin-right: 30px;
-  padding: 0 5px;
-  text-align: center;
-  overflow: hidden;
-}
-.floor2_r .show {
-  display: block;
-}
-.floor2_r .unshow {
+.floor2 .floor2_l .con .img .none {
   display: none;
-}
-.floor2_r .con-tab ul {
-  display: flex;
-  flex-wrap: wrap;
-  border-top: 1px solid #a1c0f6;
-}
-.floor2_r .con-tab li {
-  width: 241px;
-  height: 250px;
-  border-bottom: 1px solid #ededed;
-  border-right: 1px solid #ededed;
-  overflow: hidden;
-}
-.floor2_r .con-tab dt {
-  position: relative;
-  width: 240px;
-  height: 190px;
-  text-align: center;
-}
-.floor2_r .con-tab dt img {
-  width: 180px;
-  height: 180px;
-  margin: 0 auto;
-  margin-top: 6px;
-}
-.floor2_r .con-tab .name {
-  height: 24px;
-  font-size: 14px;
-  line-height: 24px;
-  color: #383838;
-  width: 200px;
-  margin-left: 20px;
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
-.floor2_r .con-tab .price {
-  width: 200px;
-  margin-left: 20px;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  font-size: 20px;
-  line-height: 26px;
-  color: #dd0800;
-  line-height: 26px;
 }
 
 /*# sourceMappingURL=floorbox.css.map */

@@ -14,8 +14,8 @@
   margin-left: -395px;
   pointer-events: none;
 }
-.banner .arrow a {
-  display: block;
+.banner .arrow button {
+  display: none;
   width: 28px;
   height: 62px;
   font: 400 22px/62px simsun;
@@ -24,6 +24,9 @@
   background: url(arrow.png) no-repeat;
   text-decoration: none;
   pointer-events: auto;
+  border: none;
+  cursor: pointer;
+  outline: none;
 }
 .banner ul li {
   position: absolute;
@@ -34,6 +37,7 @@
   height: 450px;
   text-align: center;
   position: 0;
+  opacity: 0;
 }
 .banner ul li a {
   display: block;
@@ -55,13 +59,17 @@
   width: 186px;
   margin-left: -93px;
 }
+.banner ol .active {
+  background-color: green;
+}
 .banner ol li {
   float: left;
-  width: 21px;
-  height: 21px;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
   margin: 0 5px;
-  background: url(icon3.png) no-repeat 0 0;
-  border: 0;
+  background-color: white;
+  border: 1px;
 }
 
 .banner_r {
