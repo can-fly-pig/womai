@@ -1,24 +1,32 @@
-//Tab切换
 ! function($) {
+    //Tab切换第0块
+    const tab1 = $('.floor0_r .tabchoise');
+    const name1 = $('.floor0_r .name');
+    const item1 = $('.floor0_r .con-tab');
+    tab1.on('mouseover', function() {
+        $(this).addClass('cur').siblings().removeClass('cur');
+        item1.eq($(this).index()).show().siblings('.con-tab').hide();
+        name1.attr('color', 'green')
+    });
+    //Tab切换第一块
     const tab = $('.floor1_r .tabchoise');
     const name = $('.floor1_r .name');
-    const item = $('.con-tab');
+    const item = $('.floor1_r .con-tab');
     tab.on('mouseover', function() {
         $(this).addClass('cur').siblings().removeClass('cur');
         item.eq($(this).index()).show().siblings('.con-tab').hide();
         name.attr('color', 'green')
-    })
-}(jQuery);
-! function($) {
-    const tab = $('.floor2_r .tabchoise');
-    const item = $('.floor2_r .con-tab');
-    tab.on('mouseover', function() {
+    });
+
+    //Tab切换第二块
+    const tab2 = $('.floor2_r .tabchoise');
+    const item2 = $('.floor2_r .con-tab');
+    tab2.on('mouseover', function() {
         $(this).addClass('cur').siblings().removeClass('cur');
-        item.eq($(this).index()).show().siblings('.con-tab').hide();
-    })
-}(jQuery);
-//图片运动
-! function($) {
+        item2.eq($(this).index()).show().siblings('.con-tab').hide();
+    });
+
+    //图片运动
     $(' .con-tab img').hover(function() {
         $(this).stop(true).animate({
             left: 10 + 'px'
@@ -28,13 +36,11 @@
             left: 0 + 'px'
         })
     });
-}(jQuery);
 
-//顶部悬浮搜索框
-! function($) {
+    //顶部悬浮搜索框
     $(window).on('scroll', function() {
-        let $top = $(window).scrollTop();
-        if ($top > 1000) {
+        let $top1 = $(window).scrollTop();
+        if ($top1 > 1000) {
             $('body .header-search').stop(true).animate({
                 opacity: 1
             })
@@ -44,15 +50,15 @@
             })
         }
     })
-}(jQuery);
-//轮播图(没做完,差自动轮播)
-! function($) {
+
+    //轮播图(没做完,差自动轮播)
     const banner = $('.wrapper .banner');
     const piclist = $('.banner .piclist li');
     const btnlist = $('.banner .btnlist li');
     const leftarrow = $('.banner #arrow_l');
     const rightarrow = $('.banner #arrow_r');
     const index = 0;
+    const time = 0;
     banner.on('mouseover', function() {
         leftarrow.show();
         rightarrow.show();
@@ -76,6 +82,7 @@
     btnlist.eq(0).addClass('active').siblings('li').removeClass('active');
 
     // 左右箭头点击事件
+
     rightarrow.on('click', function() {
         function checkRight() {
             x = x + 1;
@@ -98,14 +105,24 @@
             opacity: 0
         })
     })
-}(jQuery);
 
-
-//楼层图片闪光
-! function($) {
-
-    const aimg = $('.floor1 .img .aImg');
-    const img = $('.floor1 .con .img');
+    //楼层图片闪光 (第0层楼广告图)
+    $('.floor0 .con .img').hover(function() {
+        $('.floor0 .img .aImg').stop(true).animate({
+            left: 242 + 'px'
+        })
+    }, function() {
+        $('.floor0 .img .aImg').stop(true).animate({
+            left: -242 + 'px'
+        })
+    });
+    $('.floor0 .con .img').on('mouseover', function() {
+        $('.floor0 .img .aImg').removeClass('none')
+    })
+    $('.floor0 .con .img').on('mouseout', function() {
+            $('.floor0 .img .aImg').addClass('none')
+        })
+        //楼层图片闪光 (第一层楼广告图)
     $('.floor1 .con .img').hover(function() {
         $('.floor1 .img .aImg').stop(true).animate({
             left: 242 + 'px'
@@ -122,12 +139,7 @@
         $('.floor1 .img .aImg').addClass('none')
     })
 
-}(jQuery);
-
-! function($) {
-
-    const aimg = $('.floor2 .img .aImg');
-    const img = $('.floor2 .con .img');
+    //楼层图片闪光 (第二层楼广告图)
     $('.floor2 .con .img').hover(function() {
         $('.floor2 .img .aImg').stop(true).animate({
             left: 242 + 'px'
@@ -144,10 +156,7 @@
         $('.floor2 .img .aImg').addClass('none')
     })
 
-}(jQuery)
-
-
-! function($) {
+    //右上方购物车盒子
     $('.min_cart .btn').on('mouseover', function() {
         $(this).siblings().removeClass('none'),
             $(this).addClass('cur')
@@ -156,15 +165,46 @@
         $(this).siblings().addClass('none'),
             $(this).removeClass('cur')
     })
+
+    //input文本框获得焦点内容消失
+    const input = $('.search_l input');
+    input.focus(function() {
+        this.value = '';
+    })
+
+    //input文本框失去焦点内容显示
+    input.blur(function() {
+        this.value = this.defaultValue
+    })
+
+    //二级菜单
+
+
+    //侧边导航栏隐藏元素
+
+    $('.toolbar-footer li').on('mouseover', function() {
+        $(this).addClass('cur').siblings().removeClass('cur')
+    })
+    $('.toolbar-footer li').on('mouseout', function() {
+            $('.toolbar-footer li').removeClass('cur')
+        })
+        //点击回到顶部
+    $('.toolbar-footer .top').on('click', function() {
+            $('html').animate({
+                scrollTop: 0
+            });
+        })
+        //购物车详情(未完成)
+        // $('.toolbar-car').on('click', function() {
+        //     $(this).parent().parent().parent().removeClass('lll').addClass('l_toolbar_change')
+        //     $('.car_inner').animate()
+        // })
+
+    //Tab切换ajax引入数据
+
 }(jQuery)
 
-//input文本框内容消失(没做出来)
-// ! function($) {
-//     const inpute = $('input');
-//     inpute.on('mousedown', function() {
-//         $(this).style.value = ''
-//     })
-// }(jQuery)
+
 
 // //侧边导航栏跟随屏幕高度变化(没做出来)
 // ! function($) {

@@ -22,6 +22,7 @@ $bacim:url(icon1.png) no-repeat 0 0;
 $bacim_z:url(icon1.png) no-repeat 0 -20px;
 $margin-r:20px;
 .site_nav {
+    content: 'site_nav';
     height: $h;
     background-color: $backcolor;
     z-index: $index;
@@ -185,6 +186,11 @@ $margin-r:20px;
 }
 
 body .wrapper .red:hover a {
+    color: #C70019;
+    text-decoration: underline;
+}
+
+.red:hover a {
     color: #C70019;
     text-decoration: underline;
 }

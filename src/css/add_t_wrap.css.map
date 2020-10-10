@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAQA,WAAY;EAER,QAAQ,EAAE,MAAM;;;AAGpB,aAAc;EACV,OAAO,EAbF,KAAK;EAcV,KAAK,EAXN,IAAI;EAYH,MAAM,EAXP,IAAI;EAYH,MAAM,EAXD,MAAM;EAYX,UAAU,EAXF,IAAI;;;AAchB,eAAgB;EACZ,OAAO,EArBF,KAAK;EAsBV,QAAQ,EAvBF,QAAQ;EAwBd,IAAI,EAtBL,GAAG;EAuBF,WAAW,EAtBD,MAAK",
-"sources": ["../scss/add_t_wrap.scss"],
-"names": [],
-"file": "add_t_wrap.css"
-}
