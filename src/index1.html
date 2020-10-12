@@ -766,7 +766,7 @@
                 </div>
             </div>
         </div>
-        <div class="foot_nav width">
+        <div id="foot_nav" class="width">
             <ul class="nav-con">
                 <li class="section">
                     <h3 class="red"><a href="#">生鲜蔬果</a> </h3>
@@ -954,7 +954,7 @@
                 </dl>
             </div>
         </div>
-        <div class="about width">
+        <div class="about">
             <div class="link">
                 <span class="underline"><a href="#">关于我们</a></span>
                 <span class="line">|</span>
@@ -1065,36 +1065,10 @@
 </body>
 
 <script src="https://cdn.bootcdn.net/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="https://cdn.bootcdn.net/ajax/libs/jquery.lazyload/1.8.3/jquery.lazyload.min.js"></script>
 <script src="script/jquery.lazyload.js"></script>
 <!-- 闭包的写法 -->
 <script src="../src/script/closure.js"></script>
 
-<!-- 引入数据 -->
-<script>
-    let ajax = new XMLHttpRequest();
-    ajax.open('get', 'http://192.168.11.62/H5%20study/section%202/womai_item/php/9.registry.php', true);
-    ajax.send();
-    ajax.onreadystatechange = function() {
-        if (ajax.readyState === 4) {
-            let arr = JSON.parse(ajax.responseText);
-            const rannder = document.querySelector('.rannder .floor0_r .show ul');
-            const rannder1 = document.querySelector('.rannder .floor0_r .unshow ul');
-            let str = '';
-            for (let value of arr) {
-                str += `
-                    <li><dl>
-                        <dt><a href="#"><img src="${value.url}" alt="" class="lazy"></a></dt>
-                        <dd class="name red"><a href="#">${value.title}</a></dd>
-                        <dd class="price"><span>${value.price}</span></dd>
-                    </dl></li>
-                `;
-            }
-            rannder.innerHTML = str;
-            rannder1.innerHTML = str;
-        }
-    };
-</script>
 <!-- 搜索框下拉联想 -->
 <script>
     const search = document.querySelector('.inpute');
@@ -1105,7 +1079,7 @@
         let str = '';
         for (let value of arr) {
             str += `
-                <li>${value[0]}</li>
+                <li onclick = "hung(this)">${value[0]}</li>
             `;
         }
         list.innerHTML = str;

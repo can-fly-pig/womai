@@ -188,11 +188,10 @@ function checkLeft() {
     const gusinfo = $('.list_seach ul li');
     const input = $('.search_l input');
     input.focus(function() {
-        this.value = '';
-        guess.show()
-    })
-
-    //input文本框失去焦点内容显示
+            this.value = '';
+            guess.show();
+        })
+        //input文本框失去焦点内容显示
     input.blur(function() {
             this.value = this.defaultValue;
             guess.hide()
@@ -233,14 +232,58 @@ function checkLeft() {
         })
     })
 
-
-    //懒加载(没效果)
-    $("img .lazy").lazyload({
-        effect: "fadeIn" //图片显示方式
-    })
-
-
     //ajax引入数据
+    //懒加载
+    const $list = $('.floor0_r .show');
+    $.ajax({
+        url: 'http://192.168.11.62/H5%20study/section%202/womai_item/php/9.registry.php',
+        dataType: 'json'
+    }).done(function(data) {
+        let $strhtml = '<ul>';
+        $.each(data, function(index, value) {
+            $strhtml += `
+            <li><dl>
+            <dt><a href="#"><img class="lazy" data-original="${value.url}" alt=""></a></dt>
+            <dd class="name red"><a href="#">${value.title}</a></dd>
+            <dd class="price"><span>${value.price}</span></dd>
+        </dl></li>
+                    `;
+        });
+        $strhtml += '</ul>';
+        $list.html($strhtml);
+
+        //添加懒加载
+        $(function() {
+            $("img.lazy").lazyload({ effect: "fadeIn" });
+        });
+
+    });
+
+
+    const $list1 = $('.floor0_r .unshow');
+    $.ajax({
+        url: 'http://192.168.11.62/H5%20study/section%202/womai_item/php/9.registry.php',
+        dataType: 'json'
+    }).done(function(data) {
+        let $strhtml = '<ul>';
+        $.each(data, function(index, value) {
+            $strhtml += `
+            <li><dl>
+            <dt><a href="#"><img class="lazy" data-original="${value.url}" alt=""></a></dt>
+            <dd class="name red"><a href="#">${value.title}</a></dd>
+            <dd class="price"><span>${value.price}</span></dd>
+        </dl></li>
+                    `;
+        });
+        $strhtml += '</ul>';
+        $list1.html($strhtml);
+
+        //添加懒加载
+        $(function() {
+            $("img.lazy").lazyload({ effect: "fadeIn" });
+        });
+
+    });
 
 
 

@@ -8,17 +8,12 @@
     <meta name="description" content="中粮我买网杭州站,世界500强中粮集团旗下食品网上购物网站。全部商品品质保证，严格把关保质期，支持货到付款，中粮我买网是网购用户首选的B2C网上购物商城。" />
     <meta property="qc:admins" content="21210535636775116375" />
     <link rel="shortcut icon" href="css/tubiao.jpg">
-    <link rel="stylesheet" href="css/index1.css">
     <link rel="stylesheet" href="css/listpage.css">
+    <link rel="stylesheet" href="css/pagination.css">
 </head>
 
 <body>
     <div class="head">
-        <div class="add_t_wrap">
-            <a href="">
-                <img src="https://pic2.womai.com/upload/backend/2020/09/18/17/1600419729468.jpg" alt="">
-            </a>
-        </div>
         <div class="site_nav">
             <div class="width">
                 <ul class="nav_l" id="city-pick">
@@ -105,12 +100,48 @@
                 </ul>
             </div>
         </div>
+        <div class="header clearfix">
+            <div class="width">
+                <div class="log">
+                    <a href="#">
+                        <img src="https://pic3.womai.com/upload/backend/2020/08/13/15/1597302533423.png" alt="">
+                    </a>
+                </div>
+                <div class="search_wrap">
+                    <div class="search_l">
+                        <em></em>
+                        <input type="text" value="国货当红 食在匠心" data-defvalue="国货当红 食在匠心" class="inpute">
+                        <div class="btn">
+                            <button type="submit">搜索</button>
+                        </div>
+                    </div>
 
+                    <div class="search_r red">
+                        <a href="#">高级<br>搜索</a>
+                    </div>
+                    <div class="search_b">
+                        <span class="hotwords">
+                            <span class="red"><a href="#">国货当红 食</a></span>
+                        <span class="red"><a href="#">水</a></span>
+                        <span class="red"><a href="#">粮油</a></span>
+                        <span class="red"><a href="#">奶</a></span>
+                        </span>
+                    </div>
+                </div>
+                <div class="app">
+                    <a href="#">
+                        <img src="https://pic2.womai.com/upload/backend/2017/04/25/14/1493101441030.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
         <div class="main_nav_wrap">
             <div class="width">
 
-                <div class="nav_v">
-                    <span class="nav"><a href="#">团购</a></span>
+                <div class="sort_self nav_v">
+                    <span class="sort"><button>默认排序</button></span>
+                    <span class="sort"><button>生序排序</button></span>
+                    <span class="sort"><button>降序排序</button></span>
                 </div>
                 <div class="min_cart">
                     <div class="btn">
@@ -139,6 +170,11 @@
     </div>
     <div id="rannder">
         <ul class="width"></ul>
+    </div>
+    <!-- 分页的结构 -->
+    <div class="pagelist">
+        <div class="pageshow m-style">
+        </div>
     </div>
     <div class="foot">
         <div class="healper width">
@@ -194,7 +230,7 @@
                 </dl>
             </div>
         </div>
-        <div class="about width">
+        <div class="about ">
             <div class="link">
                 <span class="underline"><a href="#">关于我们</a></span>
                 <span class="line">|</span>
@@ -238,7 +274,6 @@
             </div>
         </div>
     </div>
-
     <div class="l_toolbar">
         <div class="toolbar-left">
             <div class="toolbar-top">
@@ -287,34 +322,8 @@
     </div>
 </body>
 <script src="https://cdn.bootcdn.net/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="https://cdn.bootcdn.net/ajax/libs/jquery.lazyload/1.8.3/jquery.lazyload.min.js"></script>
 <script src="script/jquery.lazyload.js"></script>
-<!-- 闭包的写法 -->
-<script src="../src/script/closure.js"></script>
-
-<!-- 引入数据 -->
-<script>
-    let ajax = new XMLHttpRequest();
-    ajax.open('get', 'http://192.168.11.62/H5%20study/section%202/womai_item/php/list.php', true);
-    ajax.send();
-    ajax.onreadystatechange = function() {
-        if (ajax.readyState === 4) {
-            let arr = JSON.parse(ajax.responseText);
-            const rannder = document.querySelector('#rannder ul');
-            let str = '';
-            for (let value of arr) {
-                str += `
-                    <li><dl>
-                        <dt><a href="#"><img src="${value.url}" alt="" class="lazy"></a></dt>
-                        <dd class="name red"><a href="#">${value.title}</a></dd>
-                        <dd class="price"><span>￥${value.price}</span></dd>
-                    </dl></li>
-                `;
-            }
-            rannder.innerHTML = str;
-        }
-    };
-</script>
+<script src="../src/script/jquery.pagination.js"></script>
 <!-- list的js -->
 <script src="../src/script/list.js"></script>
 
