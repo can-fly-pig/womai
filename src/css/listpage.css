@@ -1,0 +1,37 @@
+#rannder {
+  margin: 0 auto;
+}
+#rannder ul {
+  content: '_rannder';
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+#rannder ul li {
+  width: 230px;
+  height: 250px;
+  border: 1px solid #c3c3c3;
+  margin-top: 35px;
+}
+#rannder ul li dl {
+  padding-top: 27px;
+}
+#rannder ul li dl dt {
+  text-align: center;
+}
+#rannder ul .name {
+  height: 24px;
+  font-size: 14px;
+  line-height: 24px;
+  color: #383838;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+#rannder ul img {
+  width: 150px;
+  height: 150px;
+}
+
+/*# sourceMappingURL=listpage.css.map */

@@ -1,0 +1,40 @@
+@charset "utf-8";
+#rannder {
+    margin: 0 auto;
+    ul {
+        content: '_rannder';
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        li {
+            width: 230px;
+            height: 250px;
+            border: 1px solid #c3c3c3;
+            margin-top: 35px;
+            // &:hover {
+            //     border-color: red;
+            // }
+            dl {
+                padding-top: 27px;
+                dt {
+                    text-align: center;
+                }
+            }
+        }
+        .name {
+            height: 24px;
+            font-size: 14px;
+            line-height: 24px;
+            color: #383838;
+            // width: 120px;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+        img {
+            width: 150px;
+            height: 150px;
+        }
+    }
+}

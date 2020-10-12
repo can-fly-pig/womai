@@ -1,5 +1,6 @@
     .l_toolbar {
         position: fixed;
+        right: -276px;
         top: 0;
         z-index: 9999999;
         width: 310px;
@@ -167,18 +168,25 @@
         }
         .car_inner {
             position: absolute;
+            top: 0;
             left: 34px;
             width: 276px;
             height: 100%;
             background: #e6e6e6;
             overflow: hidden;
+            z-index: 9999;
+            div {
+                position: absolute;
+                right: -276px;
+                width: 276px;
+                height: 100%;
+                h3 {
+                    position: relative;
+                    height: 40px;
+                    font: 18px/40px "Microsoft YaHei";
+                    color: #383838;
+                    text-align: center;
+                }
+            }
         }
-    }
-    
-    .lll {
-        right: -276px;
-    }
-    
-    .l_toolbar_change {
-        right: 0;
     }

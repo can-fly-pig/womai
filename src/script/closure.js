@@ -1,3 +1,20 @@
+var x = 0;
+
+function checkRight() {
+    x = x + 1;
+    if (x > 5) {
+        x = 0
+    }
+}
+
+function checkLeft() {
+    x = x - 1;
+    if (x < 0) {
+        x = 5
+    }
+}
+
+
 ! function($) {
     //Tab切换第0块
     const tab1 = $('.floor0_r .tabchoise');
@@ -167,17 +184,24 @@
     })
 
     //input文本框获得焦点内容消失
+    const guess = $('.list_seach ul');
+    const gusinfo = $('.list_seach ul li');
     const input = $('.search_l input');
     input.focus(function() {
         this.value = '';
+        guess.show()
     })
 
     //input文本框失去焦点内容显示
     input.blur(function() {
-        this.value = this.defaultValue
-    })
-
-    //二级菜单
+            this.value = this.defaultValue;
+            guess.hide()
+        })
+        //li标签的内容没有到input中
+    gusinfo.on('click', function() {
+            input.value = this.innerHTML
+        })
+        //二级菜单
 
 
     //侧边导航栏隐藏元素
@@ -195,46 +219,29 @@
             });
         })
         //购物车详情(未完成)
-        // $('.toolbar-car').on('click', function() {
-        //     $(this).parent().parent().parent().removeClass('lll').addClass('l_toolbar_change')
-        //     $('.car_inner').animate()
-        // })
+    $('.toolbar-car').on('click', function() {
+        $(this).parent().parent().parent().stop(true).animate({
+                right: 0 + 'px'
+            }),
+            $(this).parent().parent().siblings('.car_inner').stop(true).animate({
+                left: 310 + 'px'
+            })
+    })
+    $('.l_toolbar').on('mouseout', function() {
+        $(this).animate({
+            right: -276 + 'px'
+        })
+    })
 
-    //Tab切换ajax引入数据
+
+    //懒加载(没效果)
+    $("img .lazy").lazyload({
+        effect: "fadeIn" //图片显示方式
+    })
+
+
+    //ajax引入数据
+
+
 
 }(jQuery)
-
-
-
-// //侧边导航栏跟随屏幕高度变化(没做出来)
-// ! function($) {
-//     const top = $('toolbar-left');
-//     top = $(document).clientHeight
-// }(jQuery)
-
-// 自动轮播(没有实现)
-// ! function($) {
-//     var banner = $('.wrapper .banner');
-//     var piclist = $('.banner .piclist li');
-//     var btnlist = $('.banner .btnlist li');
-//     var leftarrow = $('.banner #arrow_l');
-//     var rightarrow = $('.banner #arrow_r');
-//     var index = 0;
-//     var time = 0;
-//     rightarrow.onclick = function() {
-//         var x = 0;
-
-//         function checkRight() {
-//             x = x + 1;
-//         }
-//         btnlist.eq(x).addClass('active').siblings('li').removeClass('active');
-//         piclist.eq(x).stop(true).animate({
-//             opacity: 1
-//         }).siblings('li').stop(true).animate({
-//             opacity: 0
-//         })
-//     };
-//     time = setInterval(() => {
-//         rightarrow.onclick()
-//     }, 1500);
-// }(jQuery)
