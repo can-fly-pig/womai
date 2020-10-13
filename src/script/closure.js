@@ -175,11 +175,11 @@ function checkLeft() {
 
     //右上方购物车盒子
     $('.min_cart .btn').on('mouseover', function() {
-        $(this).siblings().removeClass('none'),
+        $(this).find('.cart_cont').removeClass('none'),
             $(this).addClass('cur')
     })
     $('.min_cart .btn').on('mouseout', function() {
-        $(this).siblings().addClass('none'),
+        $(this).find('.cart_cont').addClass('none'),
             $(this).removeClass('cur')
     })
 
@@ -217,17 +217,14 @@ function checkLeft() {
                 scrollTop: 0
             });
         })
-        //购物车详情(未完成)
+        //购物车详情
     $('.toolbar-car').on('click', function() {
         $(this).parent().parent().parent().stop(true).animate({
-                right: 0 + 'px'
-            }),
-            $(this).parent().parent().siblings('.car_inner').stop(true).animate({
-                left: 310 + 'px'
-            })
+            right: 0 + 'px'
+        })
     })
-    $('.l_toolbar').on('mouseout', function() {
-        $(this).animate({
+    $('.car_inner').on('mouseout', function() {
+        $(this).parent().animate({
             right: -276 + 'px'
         })
     })

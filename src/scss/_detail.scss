@@ -124,6 +124,26 @@
         .p-btn {
             margin-top: 20px;
             margin-left: 50px;
+            button {
+                height: 48px;
+                width: 30px;
+                border: none;
+                outline: none;
+                position: relative;
+                border: 1px solid gray;
+                top: -1.2px;
+                background-color: white;
+                font-size: 20px;
+                cursor: pointer;
+            }
+            .minus {
+                left: 23.3px;
+                border-right: none;
+            }
+            .add {
+                border-left: none;
+                right: 3.3px;
+            }
             input {
                 display: inline-block;
                 width: 50px;
@@ -134,6 +154,7 @@
                 margin-left: 20px;
                 border: 1px solid gray;
                 text-align: center;
+                outline: none;
             }
             a {
                 display: block;
@@ -158,5 +179,10 @@
         right: 50px;
         top: 100px;
         border: 1px solid red;
+        a {
+            width: 200px;
+            height: 30px;
+            display: inline-block;
+        }
     }
 }

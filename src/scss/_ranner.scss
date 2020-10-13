@@ -11,7 +11,8 @@
             width: 230px;
             height: 280px;
             border: 2px solid opacify($color: #ffffff, $amount: 0);
-            margin-top: 35px;
+            margin-top: 8px;
+            background-color: #f5f5f5;
             &:hover {
                 border: 2px solid red;
             }

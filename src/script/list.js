@@ -25,17 +25,14 @@
         });
     })
 
-    //购物车详情(未完成)
+    //购物车弹出
     $('.toolbar-car').on('click', function() {
         $(this).parent().parent().parent().stop(true).animate({
-                right: 0 + 'px'
-            }),
-            $(this).parent().parent().siblings('.car_inner').stop(true).animate({
-                left: 310 + 'px'
-            })
+            right: 0 + 'px'
+        })
     })
-    $('.l_toolbar').on('mouseout', function() {
-        $(this).animate({
+    $('.car_inner').on('mouseout', function() {
+        $(this).parent().animate({
             right: -276 + 'px'
         })
     })
@@ -182,6 +179,10 @@
             $('#rannder ul').append(value);
         });
     });
+
+
+
+
 }(jQuery)
 //加入购物车点击后边框变化
 function addbord(abv) {

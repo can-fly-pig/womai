@@ -9,8 +9,7 @@
     <meta property="qc:admins" content="21210535636775116375" />
     <link rel="shortcut icon" href="css/tubiao.jpg">
     <!-- <link rel="stylesheet" href="css/index1.css"> -->
-    <link rel="stylesheet" href="css/listpage.css">
-    <link rel="stylesheet" href="css/detail.css">
+    <link rel="stylesheet" href="css/detailpage.css">
 </head>
 
 <body>
@@ -131,9 +130,10 @@
             </div>
             <div class="p-price"><strong><em>￥</em><i class="loadpcp"></i></strong></div>
             <div class="p-btn">
+                <button class="minus">-</button>
                 <input type="text" id="count" value="1" />
-                <a href="javascript:;">加入购物车</a>
-                <button></button>
+                <button class="add">+</button>
+                <a href="http://192.168.11.62/H5%20study/section%202/womai_item/src/cart.html">加入购物车</a>
             </div>
 
         </div>
@@ -276,15 +276,23 @@
             </div>
         </div>
         <div class="car_inner">
-            <div>
+            <div class="content">
                 <h3>我的购物车<em></em></h3>
+                <img src="" alt="">
+                <p class="title"></p>
+                <p class="price"></p>
+                <button class=" minus"></button>
+                <span class="num"></span>
+                <button class="add"></button>
             </div>
             <div></div>
         </div>
     </div>
 </body>
 <script src="https://cdn.bootcdn.net/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- <script src="https://cdn.bootcdn.net/ajax/libs/jquery-cookie/1.0/jquery.cookie.min.js"></script> -->
 <!-- list的js -->
+<script src="../src/script/cookie.js"></script>
 <script src="../src/script/detail.js"></script>
 
 

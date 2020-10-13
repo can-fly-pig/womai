@@ -926,6 +926,7 @@ body #foot_nav .pic img {
 .main_nav_wrap .width .min_cart .btn {
   display: inline;
   position: absolute;
+  z-index: 106;
   top: -3px;
   right: 0px;
   width: 180px;
@@ -977,16 +978,15 @@ body #foot_nav .pic img {
   overflow: hidden; }
 .main_nav_wrap .width .min_cart .cur {
   top: 1px;
-  z-index: 105;
+  z-index: 106;
   height: 22px;
   margin: 0;
   border: 1px solid #3a9901;
-  border-bottom: none;
   background-color: #fff; }
 .main_nav_wrap .width .min_cart .cart_cont {
   position: absolute;
-  top: 48px;
-  right: 0px;
+  top: 47px;
+  right: -1px;
   z-index: 104;
   width: 343px;
   padding: 15px 0px 8px 15px;
@@ -1198,7 +1198,6 @@ body #foot_nav .pic img {
   z-index: 9999; }
 .l_toolbar .car_inner div {
   position: absolute;
-  right: -276px;
   width: 276px;
   height: 100%; }
 .l_toolbar .car_inner div h3 {
